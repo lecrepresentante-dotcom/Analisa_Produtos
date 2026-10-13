@@ -1,0 +1,2592 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark">
+<title>PROD · Check Produtos</title>
+<link rel="icon" type="image/png" sizes="64x64" href="data:image/png;base64,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">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Check Produtos">
+<style>
+  html, body{ background:#14171C; margin:0; padding:0; color:#EDEAE3; }
+  :root{
+    --bg:#14171C;
+    --panel:#1B1F26;
+    --panel-2:#20242C;
+    --line:#2A2F38;
+    --text:#EDEAE3;
+    --text-dim:#9299A6;
+    --accent:#E8871E;
+    --accent-dim:#7A5327;
+    --steel:#4C7A96;
+    --pos:#6FA96B;
+    --neg:#C9634B;
+    --radius:10px;
+    font-size:16px;
+  }
+  *{box-sizing:border-box;}
+  #cp-root{
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Inter',system-ui,sans-serif;
+    min-height:100%;
+    padding:0 0 32px 0;
+    display:flex;
+    flex-direction:column;
+    gap:0;
+  }
+  #cp-root .mono{font-family:'IBM Plex Mono',monospace;}
+
+  /* ---- Top bar ---- */
+  .cp-topbar{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:14px 16px 10px 16px;
+    border-bottom:1px solid var(--line);
+    position:sticky; top:0; z-index:20;
+    background:var(--bg);
+  }
+  .cp-logo{
+    width:38px;height:38px;flex:none;border-radius:9px;
+  }
+  .cp-title{display:flex; flex-direction:column; line-height:1.1;}
+  .cp-title b{font-family:'Space Grotesk',sans-serif; font-size:16px; letter-spacing:.2px;}
+  .cp-title span{font-size:9px; color:var(--text-dim); text-transform:uppercase; letter-spacing:1.2px;}
+  .cp-status{
+    margin-left:auto; font-size:9px; color:var(--text-dim); text-align:right; line-height:1.3;
+  }
+  .cp-status b{color:var(--accent); font-weight:600;}
+
+  /* ---- Import bar ---- */
+  .cp-import{
+    display:flex; gap:8px; align-items:center; flex-wrap:wrap;
+    padding:10px 16px; border-bottom:1px solid var(--line); background:var(--panel);
+  }
+  .cp-import label.file-btn{
+    background:var(--accent); color:#191308; font-weight:700; font-size:11px;
+    padding:8px 12px; border-radius:8px; cursor:pointer; white-space:nowrap;
+  }
+  .cp-import input[type=file]{display:none;}
+  .cp-import .hint{font-size:9px; color:var(--text-dim);}
+
+  /* ---- Tabs ---- */
+  .cp-tabs{
+    display:flex; gap:4px; overflow-x:auto; padding:8px 12px; border-bottom:1px solid var(--line);
+    background:var(--bg); position:sticky; top:66px; z-index:19;
+    scrollbar-width:none;
+  }
+  .cp-tabs::-webkit-scrollbar{display:none;}
+  .cp-tab{
+    flex:none; font-size:10px; font-weight:600; padding:7px 11px; border-radius:20px;
+    border:1px solid var(--line); color:var(--text-dim); background:var(--panel); cursor:pointer;
+    white-space:nowrap;
+  }
+  .cp-tab.active{ background:var(--accent); color:#191308; border-color:var(--accent);}
+  .cp-tab.disabled{ opacity:.45; cursor:default; }
+
+  /* ---- Filters ---- */
+  .cp-filters-shell{ position:sticky; top:112px; z-index:18; background:var(--bg); }
+  .cp-filters-togglebar{
+    display:flex; align-items:center; gap:8px; padding:6px 16px;
+    background:var(--panel-2); border-bottom:1px solid var(--line);
+  }
+  .cp-filters-toggle-btn{
+    width:26px; height:26px; border-radius:50%; flex:none;
+    background:var(--panel); border:1px solid var(--line); color:var(--accent);
+    display:flex; align-items:center; justify-content:center; cursor:pointer;
+    padding:0; transition:background .2s ease, border-color .2s ease;
+  }
+  .cp-filters-toggle-btn:hover{ border-color:var(--accent); }
+  .cp-filters-toggle-btn.open svg{ transform:rotate(180deg); }
+  .cp-filters-togglebar-label{ font-size:10px; color:var(--text-dim); text-transform:uppercase; letter-spacing:.8px; }
+  .cp-filters-wrap{
+    max-height:0; overflow:hidden;
+    transition:max-height .25s ease;
+  }
+  .cp-filters{
+    display:flex; gap:8px; flex-wrap:wrap; padding:10px 16px; border-bottom:1px solid var(--line);
+    background:var(--panel-2);
+  }
+  .cp-filter-group{display:flex; flex-direction:column; gap:3px;}
+  .cp-filter-group>span{font-size:9px; color:var(--text-dim); text-transform:uppercase; letter-spacing:.8px;}
+  .cp-chip-row{display:flex; gap:5px; flex-wrap:wrap;}
+  .cp-chip{
+    font-size:10px; padding:5px 9px; border-radius:7px; border:1px solid var(--line);
+    background:var(--panel); color:var(--text-dim); cursor:pointer; white-space:nowrap;
+  }
+  .cp-chip.on{ background:var(--steel); color:#fff; border-color:var(--steel);}
+  select.cp-select{
+    background:var(--panel); color:var(--text); border:1px solid var(--line); border-radius:7px;
+    font-size:10px; padding:6px 8px; min-width:150px;
+  }
+  .cp-clientsearch{position:relative;}
+  .cp-clientsearch input{
+    background:var(--panel); color:var(--text); border:1px solid var(--line); border-radius:7px;
+    font-size:10px; padding:6px 8px; width:190px; cursor:pointer;
+  }
+  .cp-clientsearch input:not([readonly]){cursor:text;}
+  .cp-client-dropdown{
+    position:absolute; top:110%; left:0; background:var(--panel); border:1px solid var(--line);
+    border-radius:8px; max-height:220px; overflow-y:auto; width:260px; z-index:30; display:none;
+  }
+  .cp-client-dropdown.open{display:block;}
+  .cp-client-opt{padding:7px 9px; font-size:10px; cursor:pointer; border-bottom:1px solid var(--line); display:flex; justify-content:space-between; gap:6px;}
+  .cp-client-opt:hover{background:var(--panel-2);}
+  .cp-client-opt.sel{color:var(--accent); font-weight:700;}
+  .cp-client-tags{display:flex; gap:5px; flex-wrap:wrap; max-width:220px;}
+  .cp-client-tag{font-size:9px; background:var(--steel); color:#fff; padding:3px 6px; border-radius:6px; display:flex; gap:4px; align-items:center;}
+  .cp-client-tag b{cursor:pointer; font-weight:900;}
+
+  /* ---- Content ---- */
+  .cp-content{padding:16px;}
+  .cp-empty{
+    text-align:center; padding:60px 20px; color:var(--text-dim);
+  }
+  .cp-empty svg{width:64px;height:64px;opacity:.5;margin-bottom:12px;}
+  .cp-empty p{font-size:12px; max-width:280px; margin:6px auto;}
+
+  .cp-section-title{font-size:12px; font-weight:700; margin:18px 0 8px 0; color:var(--text); display:flex; align-items:center; gap:6px;}
+  .cp-section-title .dash{width:14px; height:2px; background:var(--accent); display:inline-block;}
+  .cp-sub{font-size:9px; color:var(--text-dim); margin:-4px 0 10px 0;}
+
+  .cp-kpi-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(130px,1fr)); gap:8px; margin-bottom:6px;}
+  .cp-kpi{
+    background:var(--panel); border:1px solid var(--line); border-radius:var(--radius); padding:11px 12px;
+  }
+  .cp-kpi span.lbl{font-size:9px; color:var(--text-dim); text-transform:uppercase; letter-spacing:.6px; display:block; margin-bottom:5px;}
+  .cp-kpi span.val{font-family:'IBM Plex Mono',monospace; font-size:18px; font-weight:600; display:block;}
+  .cp-kpi span.delta{font-size:9px; margin-top:4px; display:inline-block; padding:2px 6px; border-radius:5px;}
+  .cp-kpi span.delta.pos{color:var(--pos); background:rgba(111,169,107,.12);}
+  .cp-kpi span.delta.neg{color:var(--neg); background:rgba(201,99,75,.12);}
+
+  .cp-panel{background:var(--panel); border:1px solid var(--line); border-radius:var(--radius); padding:12px; margin-bottom:12px;}
+  .cp-chart-wrap{width:100%; overflow-x:auto;}
+
+  table.cp-table{width:100%; border-collapse:collapse; font-size:10px;}
+  table.cp-table th{
+    text-align:left; font-size:9px; color:var(--text-dim); text-transform:uppercase; letter-spacing:.5px;
+    padding:6px 8px; border-bottom:1px solid var(--line); position:sticky; top:0; background:var(--panel);
+  }
+  table.cp-table td{padding:7px 8px; border-bottom:1px solid var(--line); font-family:'IBM Plex Mono',monospace; color:var(--text) !important;}
+  table.cp-table td.name{font-family:'Inter',sans-serif;}
+  table.cp-table tr:last-child td{border-bottom:none;}
+  .cp-bar-bg{background:var(--panel-2); border-radius:4px; height:6px; width:100%; overflow:hidden; margin-top:3px;}
+  .cp-bar-fill{background:var(--accent); height:100%;}
+
+  .cp-soon{
+    padding:40px 20px; text-align:center; color:var(--text-dim); font-size:11px;
+    border:1px dashed var(--line); border-radius:var(--radius); background:var(--panel);
+  }
+  .cp-soon b{color:var(--text); display:block; font-size:13px; margin-bottom:6px; font-family:'Space Grotesk',sans-serif;}
+
+  ::-webkit-scrollbar{height:6px; width:6px;}
+  ::-webkit-scrollbar-thumb{background:var(--line); border-radius:4px;}
+
+  @media print{
+    .cp-topbar, .cp-import, #cp-bd-info, .cp-tabs, .cp-filters-shell, .cp-noprint{ display:none !important; }
+    #cp-root, .cp-content{ padding:0 !important; background:#fff !important; }
+    .cp-panel:not(#cp-print-area){ display:none !important; }
+    #cp-print-area{ border:none !important; background:#fff !important; }
+    #cp-print-area div[style*="max-height"]{ max-height:none !important; overflow:visible !important; }
+    #cp-print-area .cp-section-title{ display:flex !important; color:#000 !important; border-bottom:1px solid #ccc; }
+    #cp-print-area .cp-sub{ display:block !important; color:#444 !important; }
+    #cp-print-area .cp-kpi-grid{ display:grid !important; grid-template-columns:repeat(2,1fr) !important; }
+    #cp-print-area .cp-kpi{ page-break-inside:avoid; break-inside:avoid; border:1px solid #ccc !important; }
+    #cp-print-area .cp-kpi .lbl{ color:#555 !important; }
+    #cp-print-area .cp-kpi .val{ color:#000 !important; }
+    table.cp-table{ color:#000 !important; }
+    table.cp-table th{ color:#000 !important; background:#fff !important; }
+    table.cp-table td{ color:#000 !important; }
+    table.cp-table tr{ page-break-inside:avoid; break-inside:avoid; }
+    #cp-print-area > .cp-section-title, #cp-print-area > table, #cp-print-area > .cp-kpi-grid{ page-break-inside:avoid; break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+
+<div id="cp-lock-overlay" style="display:none; position:fixed; inset:0; z-index:99999; background:#14171C; color:#EDEAE3; flex-direction:column; align-items:center; justify-content:center; padding:24px;">
+  <div id="cp-lock-content" style="max-width:300px; width:100%; text-align:center;"></div>
+</div>
+
+<div id="cp-root">
+  <div class="cp-topbar">
+    <img class="cp-logo" alt="PROD" src="data:image/png;base64,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">
+    <div class="cp-title"><b>Check Produtos</b><span>Painel de vendas · representante</span></div>
+    <div class="cp-status" id="cp-status">Nenhum arquivo carregado</div>
+    <button id="cp-pin-config-btn" title="Configurar senha de acesso" style="background:none; border:1px solid var(--line); color:var(--text-dim); border-radius:6px; font-size:12px; padding:3px 7px; margin-left:8px; cursor:pointer; align-self:flex-start;">🔒</button>
+    <span id="cp-pin-status" style="font-size:8px; color:var(--text-dim); margin-left:4px; align-self:flex-start;"></span>
+    <span style="font-size:8px; color:var(--text-dim); margin-left:10px; align-self:flex-start; white-space:nowrap;">
+      Fechar após
+      <input id="cp-idle-min" type="number" min="1" max="180" placeholder="10" title="Minutos parado até bloquear de novo (padrão: 10)"
+        style="width:32px; background:var(--panel); color:var(--text); border:1px solid var(--line); border-radius:4px; font-size:8px; padding:1px 3px; margin:0 2px;"/>
+      min
+    </span>
+    <div style="font-size:8px; color:var(--accent); margin-left:8px; align-self:flex-start;">v57</div>
+  </div>
+
+  <div class="cp-import">
+    <label class="file-btn">Importar Excel
+      <input type="file" id="cp-file" accept=".xlsx,.xls"/>
+    </label>
+    <span class="hint" id="cp-import-hint">Selecione a planilha "Produtos-Faturados.xlsx" (aba BDados_Vendas). Reimporte sempre que quiser atualizar os dados.</span>
+  </div>
+
+  <div class="cp-import" id="cp-bd-info" style="display:none; border-top:1px dashed var(--line);">
+    <span class="hint mono" id="cp-bd-path" style="color:var(--text);"></span>
+  </div>
+
+  <div class="cp-tabs" id="cp-tabs"></div>
+
+  <div class="cp-filters-shell" id="cp-filters-shell" style="display:none;">
+    <div class="cp-filters-togglebar">
+      <button id="cp-filters-toggle-btn" class="cp-filters-toggle-btn" aria-label="Mostrar ou ocultar filtros" aria-expanded="false">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="transition:transform .25s ease;">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+      <span class="cp-filters-togglebar-label" id="cp-filters-summary">Filtros</span>
+    </div>
+    <div class="cp-filters-wrap" id="cp-filters-wrap">
+      <div class="cp-filters" id="cp-filters">
+        <div class="cp-filter-group">
+          <span>Período</span>
+          <div class="cp-chip-row">
+            <div class="cp-chip on" data-period="atual">Ano atual</div>
+            <div class="cp-chip" data-period="anterior">Ano anterior</div>
+            <div class="cp-chip" data-period="ambos">Ambos</div>
+          </div>
+        </div>
+        <div class="cp-filter-group">
+          <span>Mês (múltiplo)</span>
+          <div class="cp-clientsearch" id="cp-mes-wrap">
+            <input type="text" id="cp-mes-toggle" placeholder="Todos os meses" autocomplete="off" readonly/>
+            <div class="cp-client-dropdown" id="cp-mes-dropdown"></div>
+          </div>
+          <div class="cp-client-tags" id="cp-mes-tags"></div>
+        </div>
+        <div class="cp-filter-group" id="cp-area-group" style="display:none;">
+          <span>Área</span>
+          <div class="cp-chip-row" id="cp-area-chips"></div>
+        </div>
+        <div class="cp-filter-group">
+          <span>Cliente / Loja</span>
+          <div class="cp-clientsearch">
+            <input type="text" id="cp-client-input" placeholder="Buscar cliente..." autocomplete="off"/>
+            <div class="cp-client-dropdown" id="cp-client-dropdown"></div>
+          </div>
+          <div class="cp-client-tags" id="cp-client-tags"></div>
+        </div>
+        <div class="cp-filter-group" id="cp-produto-group" style="display:none;">
+          <span>Produto</span>
+          <div class="cp-clientsearch">
+            <input type="text" id="cp-produto-input" placeholder="Buscar produto..." autocomplete="off"/>
+            <div class="cp-client-dropdown" id="cp-produto-dropdown"></div>
+          </div>
+          <div class="cp-client-tags" id="cp-produto-tags"></div>
+        </div>
+        <div class="cp-filter-group" style="justify-content:flex-end;">
+          <span>&nbsp;</span>
+          <div class="cp-chip" id="cp-clear-filters" style="border-color:var(--neg); color:var(--neg);">Limpar filtros</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cp-content" id="cp-content">
+    <div class="cp-empty">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#9299A6" stroke-width="1.4"><path d="M4 4h16v16H4z" stroke-dasharray="2 2"/><path d="M8 14l3-3 2 2 4-4"/></svg>
+      <p>Importe a planilha para começar. Os filtros e as análises aparecem assim que os dados forem carregados.</p>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+<script>
+(function(){
+  // Nunca deixa um erro de execução aparecer na tela (painel de console/overlay)
+  window.onerror = function(){ return true; };
+
+  // Adaptador de armazenamento: usa localStorage do navegador (funciona no GitHub Pages / qualquer servidor).
+  // Se algum dia rodar de novo dentro do Claude e window.storage existir, usa ele — senão cai pro localStorage.
+  const storage = {
+    async get(key){
+      try{
+        if(typeof window.storage!=='undefined') return await window.storage.get(key, false);
+        const v = localStorage.getItem('cp:'+key);
+        return v!=null ? {key, value:v} : null;
+      }catch(err){ return null; }
+    },
+    async set(key, value){
+      try{
+        if(typeof window.storage!=='undefined') return await window.storage.set(key, value, false);
+        localStorage.setItem('cp:'+key, value);
+        return {key, value};
+      }catch(err){ return null; }
+    }
+  };
+  window.addEventListener('error', function(e){ e.stopImmediatePropagation(); e.preventDefault(); }, true);
+  window.addEventListener('unhandledrejection', function(e){ e.stopImmediatePropagation(); e.preventDefault(); }, true);
+
+  // ---- Proteção por PIN ----
+  let PIN_HASH = null;
+  let pinCarregado = false;
+  let suprimirTravaPorImpressao = false;
+
+  async function cpHash(txt){
+    const s = String(txt);
+    try{
+      if(window.crypto && window.crypto.subtle && window.crypto.subtle.digest){
+        const enc = new TextEncoder().encode(s);
+        const buf = await window.crypto.subtle.digest('SHA-256', enc);
+        const arr = Array.from(new Uint8Array(buf));
+        return 'sha256:'+arr.map(b=>b.toString(16).padStart(2,'0')).join('');
+      }
+    }catch(err){}
+    // fallback defensivo, só se o navegador não tiver crypto.subtle (ambiente não seguro/muito antigo)
+    let h = 0;
+    for(let i=0;i<s.length;i++){ h = (h*31 + s.charCodeAt(i)) >>> 0; }
+    return 'h'+h+'_'+s.length;
+  }
+
+  const CP_PIN_FORMATO_ATUAL = 'sha256:';
+
+  async function carregarPin(){
+    try{
+      const res = await storage.get('app-pin-hash');
+      let hash = (res && res.value) ? res.value : null;
+      if(hash && hash.indexOf(CP_PIN_FORMATO_ATUAL)!==0){
+        // formato de uma versão anterior do app, incompatível com o atual — limpa tudo e força criar de novo
+        hash = null;
+        try{
+          await storage.set('app-pin-hash', '');
+          await storage.set('app-pin-pergunta', '');
+          await storage.set('app-pin-resposta-hash', '');
+        }catch(err){}
+      }
+      PIN_HASH = hash;
+    }catch(err){ PIN_HASH = null; }
+    pinCarregado = true;
+    return PIN_HASH;
+  }
+
+  function cpFecharBloqueio(){
+    const ov = document.getElementById('cp-lock-overlay');
+    if(ov) ov.style.display = 'none';
+    ultimaAtividade = Date.now();
+    atualizaIndicadorPin();
+  }
+
+  function cpRemoverPinEmergencia(){
+    const box = document.getElementById('cp-lock-content');
+    if(!box) return;
+    box.innerHTML = `
+      <div style="font-size:15px; font-weight:700; margin-bottom:6px;">🔒 Check Produtos — Confirmar remoção do PIN</div>
+      <div style="font-size:11px; color:#9299A6; margin-bottom:16px;">Isso remove só a proteção por PIN. A planilha importada e as marcações de produto continuam intactas. Tem certeza?</div>
+      <button id="cp-lock-remover-sim-btn" style="width:100%; background:#C9634B; color:#fff; border:none; border-radius:8px; font-size:13px; font-weight:700; padding:11px; cursor:pointer; margin-bottom:8px;">Sim, remover o PIN</button>
+      <button id="cp-lock-cancelar-btn" style="width:100%; background:none; color:#9299A6; border:1px solid #2A2F38; border-radius:8px; font-size:12px; font-weight:700; padding:9px; cursor:pointer;">Cancelar</button>
+    `;
+    document.getElementById('cp-lock-remover-sim-btn').addEventListener('click', async ()=>{
+      PIN_HASH = null;
+      await storage.set('app-pin-hash', '');
+      await storage.set('app-pin-pergunta', '');
+      await storage.set('app-pin-resposta-hash', '');
+      tentativasErradas = 0;
+      bloqueadoAte = 0;
+      cpFecharBloqueio();
+    });
+    document.getElementById('cp-lock-cancelar-btn').addEventListener('click', ()=>cpAbrirBloqueio('entrar'));
+  }
+
+  let tentativasErradas = 0;
+  let bloqueadoAte = 0;
+
+  function cpSegundosRestantesBloqueio(){
+    return Math.max(0, Math.ceil((bloqueadoAte - Date.now())/1000));
+  }
+
+  function cpRegistrarTentativaErrada(){
+    tentativasErradas++;
+    if(tentativasErradas>=5){
+      bloqueadoAte = Date.now() + 30000; // 30s de espera após 5 erros
+      tentativasErradas = 0;
+    }
+  }
+
+  function cpAbrirBloqueio(modo, opts={}){
+    const ov = document.getElementById('cp-lock-overlay');
+    const box = document.getElementById('cp-lock-content');
+    if(!ov || !box) return;
+    ov.style.display = 'flex';
+
+    const segRestantes = cpSegundosRestantesBloqueio();
+    if(segRestantes>0 && (modo==='entrar' || modo==='gerenciar')){
+      box.innerHTML = `
+        <div style="font-size:15px; font-weight:700; margin-bottom:6px;">🔒 Check Produtos — Muitas tentativas erradas</div>
+        <div id="cp-lock-espera" style="font-size:12px; color:#C9634B;">Espere ${segRestantes}s pra tentar de novo.</div>
+      `;
+      const intervalo = setInterval(()=>{
+        const rest = cpSegundosRestantesBloqueio();
+        const el = document.getElementById('cp-lock-espera');
+        if(!el){ clearInterval(intervalo); return; }
+        if(rest<=0){ clearInterval(intervalo); cpAbrirBloqueio(modo); }
+        else el.textContent = 'Espere '+rest+'s pra tentar de novo.';
+      }, 1000);
+      return;
+    }
+
+    if(modo==='entrar'){
+      box.innerHTML = `
+        <div style="font-size:15px; font-weight:700; margin-bottom:6px;">🔒 Check Produtos protegido</div>
+        <div style="font-size:11px; color:#9299A6; margin-bottom:16px;">Digite o PIN pra continuar.</div>
+        <input id="cp-lock-input" type="password" placeholder="PIN (letras e números)" autocapitalize="off" autocorrect="off" spellcheck="false" autofocus
+          style="width:100%; background:#1B1F26; color:#EDEAE3; border:1px solid #2A2F38; border-radius:8px; font-size:16px; padding:12px; text-align:center; letter-spacing:4px; margin-bottom:10px;"/>
+        <div id="cp-lock-erro" style="font-size:11px; color:#C9634B; min-height:16px; margin-bottom:10px;"></div>
+        <button id="cp-lock-entrar-btn" style="width:100%; background:#E8871E; color:#191308; border:none; border-radius:8px; font-size:13px; font-weight:700; padding:11px; cursor:pointer; margin-bottom:10px;">Entrar</button>
+        <div id="cp-lock-esqueci" style="font-size:11px; color:#4C7A96; cursor:pointer; text-decoration:underline;">Esqueci o PIN</div>
+      `;
+      document.getElementById('cp-lock-esqueci').addEventListener('click', ()=>cpAbrirBloqueio('recuperar'));
+      const input = document.getElementById('cp-lock-input');
+      const tentar = async ()=>{
+        const val = input.value||'';
+        if((await cpHash(val))===PIN_HASH){
+          tentativasErradas = 0;
+          cpFecharBloqueio();
+        } else {
+          cpRegistrarTentativaErrada();
+          if(cpSegundosRestantesBloqueio()>0){ cpAbrirBloqueio('entrar'); return; }
+          document.getElementById('cp-lock-erro').textContent = 'PIN incorreto. Tente de novo.';
+          input.value=''; input.focus();
+        }
+      };
+      document.getElementById('cp-lock-entrar-btn').addEventListener('click', tentar);
+      input.addEventListener('keydown', (e)=>{ if(e.key==='Enter') tentar(); });
+      setTimeout(()=>input.focus(), 50);
+    }
+
+    if(modo==='criar'){
+      box.innerHTML = `
+        <div style="font-size:15px; font-weight:700; margin-bottom:6px;">🔒 Check Produtos — Criar PIN de acesso</div>
+        <div style="font-size:11px; color:#9299A6; margin-bottom:16px;">${opts.obrigatorio ? 'Este aparelho ainda não tem PIN configurado neste endereço. Crie um agora para proteger o acesso — o app só libera depois disso.' : 'Isso vai pedir essa senha sempre que o app abrir, voltar do fundo, ou ficar parado por mais de 10 minutos.'} Pode usar letras e números juntos.</div>
+        <input id="cp-lock-novo1" type="password" placeholder="Novo PIN (letras e números)" autocapitalize="off" autocorrect="off" spellcheck="false"
+          style="width:100%; background:#1B1F26; color:#EDEAE3; border:1px solid #2A2F38; border-radius:8px; font-size:16px; padding:12px; text-align:center; letter-spacing:4px; margin-bottom:8px;"/>
+        <input id="cp-lock-novo2" type="password" placeholder="Confirme o PIN" autocapitalize="off" autocorrect="off" spellcheck="false"
+          style="width:100%; background:#1B1F26; color:#EDEAE3; border:1px solid #2A2F38; border-radius:8px; font-size:16px; padding:12px; text-align:center; letter-spacing:4px; margin-bottom:14px;"/>
+        <div style="font-size:11px; color:#9299A6; text-align:left; margin-bottom:6px;">Pergunta de recuperação (pra caso esqueça o PIN — obrigatório):</div>
+        <input id="cp-lock-pergunta" type="text" placeholder="Ex: Nome do primeiro cliente que atendi"
+          style="width:100%; background:#1B1F26; color:#EDEAE3; border:1px solid #2A2F38; border-radius:8px; font-size:12px; padding:10px; margin-bottom:8px;"/>
+        <input id="cp-lock-resposta" type="text" placeholder="Resposta"
+          style="width:100%; background:#1B1F26; color:#EDEAE3; border:1px solid #2A2F38; border-radius:8px; font-size:12px; padding:10px; margin-bottom:10px;"/>
+        <div id="cp-lock-erro" style="font-size:11px; color:#C9634B; min-height:16px; margin-bottom:10px;"></div>
+        <button id="cp-lock-salvar-btn" style="width:100%; background:#E8871E; color:#191308; border:none; border-radius:8px; font-size:13px; font-weight:700; padding:11px; cursor:pointer; margin-bottom:8px;">Salvar PIN</button>
+        ${opts.obrigatorio ? '' : '<button id="cp-lock-cancelar-btn" style="width:100%; background:none; color:#9299A6; border:1px solid #2A2F38; border-radius:8px; font-size:12px; font-weight:700; padding:9px; cursor:pointer;">Cancelar</button>'}
+      `;
+      document.getElementById('cp-lock-salvar-btn').addEventListener('click', async ()=>{
+        const v1 = document.getElementById('cp-lock-novo1').value||'';
+        const v2 = document.getElementById('cp-lock-novo2').value||'';
+        const pergunta = (document.getElementById('cp-lock-pergunta').value||'').trim();
+        const resposta = (document.getElementById('cp-lock-resposta').value||'').trim();
+        if(v1.length<4){ document.getElementById('cp-lock-erro').textContent='Use pelo menos 4 dígitos/caracteres.'; return; }
+        if(v1!==v2){ document.getElementById('cp-lock-erro').textContent='Os dois PINs não são iguais.'; return; }
+        if(!pergunta || !resposta){ document.getElementById('cp-lock-erro').textContent='Preencha a pergunta e a resposta de recuperação — sem isso, não tem como recuperar se esquecer o PIN.'; return; }
+        PIN_HASH = await cpHash(v1);
+        await storage.set('app-pin-hash', PIN_HASH);
+        await storage.set('app-pin-pergunta', pergunta);
+        await storage.set('app-pin-resposta-hash', await cpHash(resposta.toLowerCase()));
+        cpFecharBloqueio();
+      });
+      document.getElementById('cp-lock-cancelar-btn')?.addEventListener('click', cpFecharBloqueio);
+    }
+
+    if(modo==='recuperar'){
+      (async ()=>{
+        const perguntaRes = await storage.get('app-pin-pergunta');
+        const pergunta = perguntaRes && perguntaRes.value;
+        if(!pergunta){
+          box.innerHTML = `
+            <div style="font-size:15px; font-weight:700; margin-bottom:6px;">🔒 Check Produtos — Sem recuperação configurada</div>
+            <div style="font-size:11px; color:#9299A6; margin-bottom:16px;">Esse PIN foi criado sem pergunta de recuperação. Só quem tem certeza do que está fazendo deve continuar: digite exatamente <b>REMOVER PIN</b> abaixo pra confirmar.</div>
+            <input id="cp-lock-frase-confirma" type="text" placeholder="Digite: REMOVER PIN" autocapitalize="off" autocorrect="off" spellcheck="false"
+              style="width:100%; background:#1B1F26; color:#EDEAE3; border:1px solid #2A2F38; border-radius:8px; font-size:13px; padding:11px; text-align:center; margin-bottom:10px;"/>
+            <div id="cp-lock-erro" style="font-size:11px; color:#C9634B; min-height:16px; margin-bottom:10px;"></div>
+            <button id="cp-lock-remover-emerg-btn" style="width:100%; background:#C9634B; color:#fff; border:none; border-radius:8px; font-size:13px; font-weight:700; padding:11px; cursor:pointer; margin-bottom:8px;">Confirmar remoção do PIN</button>
+            <button id="cp-lock-cancelar-btn" style="width:100%; background:none; color:#9299A6; border:1px solid #2A2F38; border-radius:8px; font-size:12px; font-weight:700; padding:9px; cursor:pointer;">Voltar</button>
+          `;
+          document.getElementById('cp-lock-remover-emerg-btn').addEventListener('click', ()=>{
+            const frase = (document.getElementById('cp-lock-frase-confirma').value||'').trim();
+            if(frase.toUpperCase()!=='REMOVER PIN'){
+              document.getElementById('cp-lock-erro').textContent = 'Digite exatamente "REMOVER PIN" pra confirmar.';
+              return;
+            }
+            cpRemoverPinEmergencia();
+          });
+          document.getElementById('cp-lock-cancelar-btn').addEventListener('click', ()=>cpAbrirBloqueio('entrar'));
+          return;
+        }
+        box.innerHTML = `
+          <div style="font-size:15px; font-weight:700; margin-bottom:6px;">🔒 Check Produtos — Recuperar acesso</div>
+          <div style="font-size:11px; color:#9299A6; margin-bottom:10px;">${pergunta}</div>
+          <input id="cp-lock-resp-recup" type="text" placeholder="Sua resposta" autofocus
+            style="width:100%; background:#1B1F26; color:#EDEAE3; border:1px solid #2A2F38; border-radius:8px; font-size:14px; padding:12px; text-align:center; margin-bottom:10px;"/>
+          <div id="cp-lock-erro" style="font-size:11px; color:#C9634B; min-height:16px; margin-bottom:10px;"></div>
+          <button id="cp-lock-confirmar-recup-btn" style="width:100%; background:#4C7A96; color:#fff; border:none; border-radius:8px; font-size:13px; font-weight:700; padding:11px; cursor:pointer; margin-bottom:8px;">Confirmar</button>
+          <button id="cp-lock-cancelar-btn" style="width:100%; background:none; color:#9299A6; border:1px solid #2A2F38; border-radius:8px; font-size:12px; font-weight:700; padding:9px; cursor:pointer;">Voltar</button>
+        `;
+        const input = document.getElementById('cp-lock-resp-recup');
+        const confirmar = async ()=>{
+          const respostaHashRes = await storage.get('app-pin-resposta-hash');
+          const v = (input.value||'').trim().toLowerCase();
+          if((await cpHash(v))!==(respostaHashRes&&respostaHashRes.value)){
+            cpRegistrarTentativaErrada();
+            if(cpSegundosRestantesBloqueio()>0){ cpAbrirBloqueio('recuperar'); return; }
+            document.getElementById('cp-lock-erro').textContent='Resposta incorreta.';
+            input.value=''; input.focus();
+            return;
+          }
+          tentativasErradas = 0;
+          cpAbrirBloqueio('criar');
+        };
+        document.getElementById('cp-lock-confirmar-recup-btn').addEventListener('click', confirmar);
+        input.addEventListener('keydown', (e)=>{ if(e.key==='Enter') confirmar(); });
+        document.getElementById('cp-lock-cancelar-btn').addEventListener('click', ()=>cpAbrirBloqueio('entrar'));
+        setTimeout(()=>input.focus(), 50);
+      })();
+    }
+
+    if(modo==='gerenciar'){
+      // Etapa 1: só pede o PIN atual. Nenhuma opção de trocar/remover aparece antes disso ser confirmado.
+      box.innerHTML = `
+        <div style="font-size:15px; font-weight:700; margin-bottom:6px;">🔒 Check Produtos — PIN de acesso</div>
+        <div style="font-size:11px; color:#9299A6; margin-bottom:16px;">Confirme o PIN atual pra continuar.</div>
+        <input id="cp-lock-atual" type="password" placeholder="PIN atual" autocapitalize="off" autocorrect="off" spellcheck="false" autofocus
+          style="width:100%; background:#1B1F26; color:#EDEAE3; border:1px solid #2A2F38; border-radius:8px; font-size:16px; padding:12px; text-align:center; letter-spacing:4px; margin-bottom:10px;"/>
+        <div id="cp-lock-erro" style="font-size:11px; color:#C9634B; min-height:16px; margin-bottom:10px;"></div>
+        <button id="cp-lock-confirmar-btn" style="width:100%; background:#4C7A96; color:#fff; border:none; border-radius:8px; font-size:13px; font-weight:700; padding:11px; cursor:pointer; margin-bottom:8px;">Confirmar</button>
+        <button id="cp-lock-cancelar-btn" style="width:100%; background:none; color:#9299A6; border:1px solid #2A2F38; border-radius:8px; font-size:12px; font-weight:700; padding:9px; cursor:pointer;">Cancelar</button>
+      `;
+      const input = document.getElementById('cp-lock-atual');
+      const confirmar = async ()=>{
+        const v = input.value||'';
+        if((await cpHash(v))!==PIN_HASH){
+          cpRegistrarTentativaErrada();
+          if(cpSegundosRestantesBloqueio()>0){ cpAbrirBloqueio('gerenciar'); return; }
+          document.getElementById('cp-lock-erro').textContent='PIN atual incorreto.';
+          input.value=''; input.focus();
+          return;
+        }
+        tentativasErradas = 0;
+        // Etapa 2: só agora aparecem as opções de trocar/remover.
+        box.innerHTML = `
+          <div style="font-size:15px; font-weight:700; margin-bottom:6px;">🔒 Check Produtos — PIN confirmado</div>
+          <div style="font-size:11px; color:#9299A6; margin-bottom:16px;">O que você quer fazer?</div>
+          <button id="cp-lock-trocar-btn" style="width:100%; background:#4C7A96; color:#fff; border:none; border-radius:8px; font-size:13px; font-weight:700; padding:11px; cursor:pointer; margin-bottom:8px;">Trocar PIN</button>
+          <button id="cp-lock-remover-btn" style="width:100%; background:#C9634B; color:#fff; border:none; border-radius:8px; font-size:13px; font-weight:700; padding:11px; cursor:pointer; margin-bottom:8px;">Remover PIN</button>
+          <button id="cp-lock-cancelar-btn" style="width:100%; background:none; color:#9299A6; border:1px solid #2A2F38; border-radius:8px; font-size:12px; font-weight:700; padding:9px; cursor:pointer;">Cancelar</button>
+        `;
+        document.getElementById('cp-lock-trocar-btn').addEventListener('click', ()=> cpAbrirBloqueio('criar'));
+        document.getElementById('cp-lock-remover-btn').addEventListener('click', async ()=>{
+          PIN_HASH = null;
+          await storage.set('app-pin-hash', '');
+          await storage.set('app-pin-pergunta', '');
+          await storage.set('app-pin-resposta-hash', '');
+          cpFecharBloqueio();
+        });
+        document.getElementById('cp-lock-cancelar-btn').addEventListener('click', cpFecharBloqueio);
+      };
+      document.getElementById('cp-lock-confirmar-btn').addEventListener('click', confirmar);
+      input.addEventListener('keydown', (e)=>{ if(e.key==='Enter') confirmar(); });
+      document.getElementById('cp-lock-cancelar-btn').addEventListener('click', cpFecharBloqueio);
+      setTimeout(()=>input.focus(), 50);
+    }
+  }
+
+  window.addEventListener('beforeprint', ()=>{ suprimirTravaPorImpressao = true; });
+  window.addEventListener('afterprint', ()=>{ setTimeout(()=>{ suprimirTravaPorImpressao = false; }, 800); });
+
+  document.addEventListener('visibilitychange', async ()=>{
+    if(document.hidden) return; // só age quando volta a ficar visível
+    if(suprimirTravaPorImpressao) return;
+    await carregarPin();
+    if(PIN_HASH) cpAbrirBloqueio('entrar');
+  });
+
+  // ---- Bloqueio automático por inatividade (configurável, padrão 10 minutos) ----
+  let minutosInatividade = 10;
+  let ultimaAtividade = Date.now();
+
+  async function carregarMinutosInatividade(){
+    try{
+      const res = await storage.get('app-idle-minutes');
+      const n = res && res.value ? parseInt(res.value,10) : NaN;
+      minutosInatividade = (!isNaN(n) && n>0) ? n : 10;
+    }catch(err){ minutosInatividade = 10; }
+    const campo = document.getElementById('cp-idle-min');
+    if(campo) campo.value = minutosInatividade;
+  }
+
+  ['click','keydown','touchstart','mousemove','scroll'].forEach(evt=>{
+    document.addEventListener(evt, ()=>{ ultimaAtividade = Date.now(); }, true);
+  });
+  setInterval(async ()=>{
+    if(document.hidden) return; // a checagem de visibilidade já cobre esse caso
+    if(suprimirTravaPorImpressao) return;
+    const ov = document.getElementById('cp-lock-overlay');
+    if(ov && ov.style.display==='flex') return; // já travado, não faz nada
+    await carregarPin();
+    if(PIN_HASH && (Date.now()-ultimaAtividade)>(minutosInatividade*60*1000)){
+      cpAbrirBloqueio('entrar');
+    }
+  }, 20000);
+
+  const TABS = [
+    {id:'gerencial', label:'1. Visão gerencial', ready:true},
+    {id:'cliente', label:'2. Visão cliente', ready:true},
+    {id:'visitas', label:'3. Roteiro de visitas', ready:true},
+    {id:'resumo', label:'4. Resumo executivo', ready:true},
+    {id:'loja', label:'5. Marcar produtos', ready:true},
+    {id:'lojaResultados', label:'5b. Resultados por marca', ready:true},
+    {id:'estoque', label:'6. Saúde do estoque', ready:true},
+    {id:'inteligencia', label:'7. Inteligência de vendas', ready:true},
+    {id:'ranking', label:'8. Ranking top 30', ready:true},
+    {id:'abc', label:'9. Curva ABC', ready:true},
+    {id:'auditoria', label:'10. Relatório de Auditoria', ready:true},
+    {id:'produto', label:'11. Consultar produto', ready:true},
+  ];
+  const SOON_COPY = {
+  };
+
+  const STORAGE_KEY = 'check-produtos-dataset';
+  const visitedCache = {}; // { 'AAAA-MM': {codigo: timestamp} }
+
+  function monthKey(d){
+    return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0');
+  }
+
+  async function loadVisited(mKey){
+    if(visitedCache[mKey]) return visitedCache[mKey];
+    try{
+      const res = await storage.get('visitas-'+mKey);
+      visitedCache[mKey] = (res && res.value) ? JSON.parse(res.value) : {};
+    }catch(err){
+      visitedCache[mKey] = {};
+    }
+    return visitedCache[mKey];
+  }
+
+  async function toggleVisited(mKey, codigo){
+    const data = await loadVisited(mKey);
+    if(data[codigo]) delete data[codigo]; else data[codigo] = Date.now();
+    visitedCache[mKey] = data;
+    try{ await storage.set('visitas-'+mKey, JSON.stringify(data)); }catch(err){ /* falha silenciosa: mantém apenas em memória nesta sessão */ }
+  }
+
+  window.cpToggleVisita = async function(codigo){
+    const mKey = monthKey(new Date());
+    await toggleVisited(mKey, codigo);
+    renderContent();
+  };
+  let lastFileName = '';
+  let lastSheetName = '';
+  let RAW = [];          // linhas cruas válidas
+  let CLIENTS = [];       // {codigo, nome}
+  let YEARS = [];
+  let activeTab = 'gerencial';
+  let filters = { period:'atual', meses:[], clientes:[], areas:[], produtos:[] };
+  let CLIENT_AREA = {}; // codigo -> area
+  let CLIENT_CIDADE = {}; // codigo -> cidade
+  let AREA_LABELS = {}; // area -> "cidade dominante"
+  let anoAtual = null, anoAnterior = null;
+
+  const $ = (s,el=document)=>el.querySelector(s);
+  const $$ = (s,el=document)=>Array.from(el.querySelectorAll(s));
+
+  function renderTabs(){
+    const box = $('#cp-tabs');
+    box.innerHTML='';
+    TABS.forEach(t=>{
+      const el = document.createElement('div');
+      el.className='cp-tab'+(t.id===activeTab?' active':'')+(RAW.length===0?' disabled':'');
+      el.textContent = t.label;
+      el.onclick=()=>{ if(RAW.length===0) return; activeTab=t.id; resetFilters(); atualizaVisibilidadeFiltros(); renderTabs(); renderContent(); };
+      box.appendChild(el);
+    });
+  }
+
+  function excelDateToJS(v){
+    if (v instanceof Date) return isNaN(v.getTime()) ? null : v;
+    if (typeof v === 'number'){
+      const d = new Date(Math.round((v-25569)*86400*1000));
+      return isNaN(d.getTime()) ? null : d;
+    }
+    if (typeof v === 'string'){
+      const s = v.trim();
+      // formato brasileiro dd/mm/aaaa (ou dd/mm/aa), com ou sem hora junto
+      const br = s.match(/^(\d{1,2})\/(\d{1,2})\/(\d{2,4})/);
+      if(br){
+        let [, d, mo, y] = br;
+        d = parseInt(d,10); mo = parseInt(mo,10); y = parseInt(y,10);
+        if (y < 100) y += 2000;
+        if (mo>=1 && mo<=12 && d>=1 && d<=31){
+          const dt = new Date(y, mo-1, d);
+          if(!isNaN(dt.getTime())) return dt;
+        }
+      }
+      // tenta ISO (aaaa-mm-dd) ou outro formato reconhecido pelo navegador
+      const iso = new Date(s);
+      if(!isNaN(iso.getTime())) return iso;
+      return null;
+    }
+    const d = new Date(v);
+    return isNaN(d.getTime()) ? null : d;
+  }
+
+  function handleFile(file){
+    const reader = new FileReader();
+    lastFileName = file.name;
+    $('#cp-status').textContent = 'Lendo arquivo...';
+    reader.onload = function(e){
+      try{
+        const wb = XLSX.read(e.target.result, {type:'array', cellDates:true});
+        const sheetName = wb.SheetNames.includes('BDados_Vendas') ? 'BDados_Vendas' : wb.SheetNames[0];
+        lastSheetName = sheetName;
+        const rows = XLSX.utils.sheet_to_json(wb.Sheets[sheetName], {defval:null});
+        processRows(rows);
+      }catch(err){
+        $('#cp-status').innerHTML = '<span style="color:var(--neg);">Não consegui ler este arquivo — confira se é o Excel exportado do seu controle de vendas.</span>';
+      }
+    };
+    reader.readAsArrayBuffer(file);
+  }
+
+  function processRows(rows){
+    RAW = [];
+    CLIENT_AREA = {};
+    CLIENT_CIDADE = {};
+    const clientMap = new Map();
+    const yearSet = new Set();
+    let descartadasSemProdOuData = 0;
+    let descartadasDataInvalida = 0;
+    let descartadasSemCliente = 0;
+    rows.forEach(r=>{
+      const prod = r['PROD'];
+      const dataRaw = r['DATA'];
+      if(!prod || !dataRaw) { descartadasSemProdOuData++; return; } // descarta linhas de subtotal/sem produto
+      const dt = excelDateToJS(dataRaw);
+      if(!dt || isNaN(dt.getTime())) { descartadasDataInvalida++; return; }
+      const codigo = (r['CLIENTE/LOJA']||'').toString().trim();
+      const nome = (r['NOME']||'').toString().trim();
+      if(!codigo) { descartadasSemCliente++; return; }
+      const quant = Number(r['QUANT'])||0;
+      const total = (r['TOTAL']!=null && r['TOTAL']!=='') ? Number(r['TOTAL']) : null;
+      const vlrUnit = (r['VLR UNIT']!=null && r['VLR UNIT']!=='') ? Number(r['VLR UNIT']) : null;
+      const desc = (r['DESC']||'').toString();
+      const cidade = r['CIDADE']||'';
+      const areaRaw = r['Area'];
+      const area = (areaRaw!=null && areaRaw!=='') ? Number(areaRaw) : null;
+      const nota = (r['NOTA']!=null && r['NOTA']!=='') ? String(r['NOTA']).trim() : null;
+      RAW.push({codigo, nome, prod, desc, data:dt, ano:dt.getFullYear(), mes:dt.getMonth()+1, quant, total, vlrUnit, cidade, area, nota});
+      if(!clientMap.has(codigo)) clientMap.set(codigo, nome);
+      if(area!=null && !(codigo in CLIENT_AREA)) CLIENT_AREA[codigo] = area;
+      if(cidade && !(codigo in CLIENT_CIDADE)) CLIENT_CIDADE[codigo] = cidade;
+      yearSet.add(dt.getFullYear());
+    });
+    CLIENTS = Array.from(clientMap.entries()).map(([codigo,nome])=>({codigo,nome})).sort((a,b)=>a.nome.localeCompare(b.nome));
+    YEARS = Array.from(yearSet).sort();
+    const maxYear = YEARS[YEARS.length-1];
+    anoAtual = maxYear;
+    anoAnterior = maxYear-1;
+    buildAreaLabels();
+    window.cpDiscardInfo = {descartadasSemProdOuData, descartadasDataInvalida, descartadasSemCliente};
+
+    $('#cp-status').innerHTML = RAW.length.toLocaleString('pt-BR')+' linhas · '+CLIENTS.length+' clientes · anos '+YEARS[0]+'–'+maxYear+' · <b>ano atual = '+anoAtual+'</b>';
+    $('#cp-import-hint').textContent = 'Arquivo carregado. Para atualizar, importe a planilha novamente a qualquer momento.';
+    updateBDInfo();
+    if(descartadasDataInvalida>0){
+      $('#cp-bd-info').style.display='flex';
+      const path = $('#cp-bd-path');
+      path.innerHTML += ' · <span style="color:var(--neg);">⚠ '+descartadasDataInvalida+' linha(s) com data não reconhecida foram ignoradas — confira a formatação da coluna DATA</span>';
+    }
+    persistDataset();
+
+    buildMesFilter();
+    buildClientDropdown();
+    buildAreaFilter();
+    buildProdutoDropdown();
+    atualizaVisibilidadeFiltros();
+    renderTabs();
+    renderContent();
+  }
+
+  function updateBDInfo(){
+    const box = $('#cp-bd-info');
+    const path = $('#cp-bd-path');
+    if(!lastFileName){ box.style.display='none'; return; }
+    path.textContent = 'Banco de dados: ' + lastFileName + ' · aba "' + (lastSheetName||'BDados_Vendas') + '"';
+    box.style.display='flex';
+  }
+
+  function packDataset(){
+    const descMap = {};
+    RAW.forEach(r=>{ if(!(r.prod in descMap)) descMap[r.prod]=r.desc; });
+    const clientMap = {};
+    CLIENTS.forEach(c=>{ clientMap[c.codigo]=c.nome; });
+    return {
+      tx: RAW.map(r=>[r.codigo, r.prod, r.data.getTime(), r.quant, r.area, r.cidade, r.nota]),
+      desc: descMap,
+      clientes: clientMap,
+      importedAt: Date.now(),
+      fileName: lastFileName,
+      sheetName: lastSheetName
+    };
+  }
+
+  async function persistDataset(){
+    try{
+      $('#cp-status').innerHTML += ' · <span style="color:var(--text-dim)">salvando...</span>';
+      const payload = JSON.stringify(packDataset());
+      const res = await storage.set(STORAGE_KEY, payload);
+      if(res){
+        $('#cp-status').innerHTML = RAW.length.toLocaleString('pt-BR')+' linhas · '+CLIENTS.length+' clientes · anos '+YEARS[0]+'–'+YEARS[YEARS.length-1]+' · <b>ano atual = '+anoAtual+'</b> · <span style="color:var(--pos)">salvo</span>';
+      }
+    }catch(err){
+      $('#cp-status').innerHTML += ' · <span style="color:var(--neg)">não salvou (dados só nesta sessão)</span>';
+    }
+  }
+
+  async function tryLoadPersisted(){
+    try{
+      const res = await storage.get(STORAGE_KEY);
+      if(!res || !res.value) return false;
+      const payload = JSON.parse(res.value);
+      RAW = payload.tx.map(([codigo,prod,ts,quant,area,cidade,nota])=>{
+        const dt = new Date(ts);
+        return { codigo, nome: payload.clientes[codigo]||codigo, prod, desc: payload.desc[prod]||'', data:dt, ano:dt.getFullYear(), mes:dt.getMonth()+1, quant, total:null, vlrUnit:null, cidade: cidade||'', area: (area!=null? area : null), nota: nota||null };
+      });
+      CLIENTS = Object.entries(payload.clientes).map(([codigo,nome])=>({codigo,nome})).sort((a,b)=>a.nome.localeCompare(b.nome));
+      CLIENT_AREA = {};
+      RAW.forEach(r=>{ if(r.area!=null && !(r.codigo in CLIENT_AREA)) CLIENT_AREA[r.codigo]=r.area; });
+      CLIENT_CIDADE = {};
+      RAW.forEach(r=>{ if(r.cidade && !(r.codigo in CLIENT_CIDADE)) CLIENT_CIDADE[r.codigo]=r.cidade; });
+      YEARS = Array.from(new Set(RAW.map(r=>r.ano))).sort();
+      const maxYear = YEARS[YEARS.length-1];
+      anoAtual = maxYear; anoAnterior = maxYear-1;
+      buildAreaLabels();
+      const importedDate = new Date(payload.importedAt);
+      lastFileName = payload.fileName || '';
+      lastSheetName = payload.sheetName || 'BDados_Vendas';
+      $('#cp-status').innerHTML = RAW.length.toLocaleString('pt-BR')+' linhas · '+CLIENTS.length+' clientes · anos '+YEARS[0]+'–'+maxYear+' · <b>ano atual = '+anoAtual+'</b> · <span style="color:var(--text-dim)">importado em '+importedDate.toLocaleDateString('pt-BR')+'</span>';
+      $('#cp-import-hint').textContent = 'Dados salvos do último import. Importe uma nova planilha só quando quiser atualizar.';
+      updateBDInfo();
+      buildMesFilter();
+      buildClientDropdown();
+      buildAreaFilter();
+      buildProdutoDropdown();
+      atualizaVisibilidadeFiltros();
+      return true;
+    }catch(err){
+      return false;
+    }
+  }
+
+  const MES_NOMES = ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'];
+  let mesFilterBound = false;
+  let clientFilterBound = false;
+
+  function buildMesFilter(){
+    const dd = $('#cp-mes-dropdown');
+    const toggle = $('#cp-mes-toggle');
+    const tagsBox = $('#cp-mes-tags');
+
+    function drawOptions(){
+      dd.innerHTML='';
+      for(let m=1;m<=12;m++){
+        const el = document.createElement('div');
+        el.className='cp-client-opt'+(filters.meses.includes(m)?' sel':'');
+        el.innerHTML = '<span>'+MES_NOMES[m-1]+'</span><span>'+(filters.meses.includes(m)?'✓':'')+'</span>';
+        el.onclick=(ev)=>{
+          ev.stopPropagation();
+          const i = filters.meses.indexOf(m);
+          if(i>=0) filters.meses.splice(i,1); else filters.meses.push(m);
+          filters.meses.sort((a,b)=>a-b);
+          drawOptions(); drawTags(); renderContent();
+        };
+        dd.appendChild(el);
+      }
+    }
+    function drawTags(){
+      tagsBox.innerHTML='';
+      toggle.placeholder = filters.meses.length ? filters.meses.length+' mês(es) selecionado(s)' : 'Todos os meses';
+      filters.meses.forEach(m=>{
+        const t = document.createElement('div'); t.className='cp-client-tag';
+        t.innerHTML = '<span>'+MES_NOMES[m-1]+'</span><b>&times;</b>';
+        t.querySelector('b').onclick=(ev)=>{ ev.stopPropagation(); filters.meses = filters.meses.filter(x=>x!==m); drawOptions(); drawTags(); renderContent(); };
+        tagsBox.appendChild(t);
+      });
+    }
+    if(!mesFilterBound){
+      toggle.addEventListener('click', (ev)=>{ ev.stopPropagation(); dd.classList.toggle('open'); drawOptions(); });
+      document.addEventListener('click',(e)=>{ if(!e.target.closest('#cp-mes-wrap')) dd.classList.remove('open'); });
+      mesFilterBound = true;
+    }
+    drawOptions();
+    drawTags();
+  }
+
+  function buildClientDropdown(){
+    const dd = $('#cp-client-dropdown');
+    const input = $('#cp-client-input');
+    function draw(list){
+      dd.innerHTML='';
+      list.forEach(c=>{
+        const el = document.createElement('div');
+        el.className='cp-client-opt'+(filters.clientes.includes(c.codigo)?' sel':'');
+        el.innerHTML = '<span>'+c.nome+'</span><span class="mono">'+c.codigo+'</span>';
+        el.onclick=()=>{
+          const i = filters.clientes.indexOf(c.codigo);
+          if(i>=0) filters.clientes.splice(i,1); else filters.clientes.push(c.codigo);
+          drawTags(); draw(filterList(input.value)); renderContent();
+        };
+        dd.appendChild(el);
+      });
+    }
+    function filterList(q){
+      q=(q||'').toLowerCase();
+      return CLIENTS.filter(c=> (c.nome.toLowerCase().includes(q) || c.codigo.includes(q)) && (!filters.areas.length || filters.areas.includes(String(CLIENT_AREA[c.codigo]))) ).slice(0,60);
+    }
+    function drawTags(){
+      const box = $('#cp-client-tags'); box.innerHTML='';
+      filters.clientes.forEach(cod=>{
+        const c = CLIENTS.find(x=>x.codigo===cod); if(!c) return;
+        const t = document.createElement('div'); t.className='cp-client-tag';
+        t.innerHTML = '<span>'+c.nome.split(' ').slice(0,2).join(' ')+'</span><b>&times;</b>';
+        t.querySelector('b').onclick=(ev)=>{ ev.stopPropagation(); filters.clientes = filters.clientes.filter(x=>x!==cod); drawTags(); renderContent();};
+        box.appendChild(t);
+      });
+    }
+    if(!clientFilterBound){
+      input.addEventListener('focus', ()=>{ dd.classList.add('open'); draw(filterList(input.value)); });
+      input.addEventListener('input', ()=> draw(filterList(input.value)));
+      document.addEventListener('click',(e)=>{ if(!e.target.closest('.cp-clientsearch')) dd.classList.remove('open'); });
+      clientFilterBound = true;
+    }
+  }
+
+  let produtoFilterBound = false;
+  function buildProdutoDropdown(){
+    const dd = $('#cp-produto-dropdown');
+    const input = $('#cp-produto-input');
+    if(!dd || !input) return;
+    const produtosUnicosFiltro = [];
+    const vistosF = new Set();
+    RAW.forEach(r=>{ if(!vistosF.has(r.prod)){ vistosF.add(r.prod); produtosUnicosFiltro.push({prod:r.prod, desc:r.desc}); } });
+
+    function draw(list){
+      dd.innerHTML='';
+      list.forEach(p=>{
+        const el = document.createElement('div');
+        el.className='cp-client-opt'+(filters.produtos.includes(p.prod)?' sel':'');
+        el.innerHTML = '<span>'+String(p.desc||p.prod).slice(0,50)+'</span><span class="mono">'+p.prod+'</span>';
+        el.onclick=()=>{
+          filters.produtos = [p.prod]; // seleção única
+          drawTags(); dd.classList.remove('open'); renderContent();
+        };
+        dd.appendChild(el);
+      });
+    }
+    function filterList(q){
+      q=(q||'').toLowerCase().trim();
+      if(q.length<2) return [];
+      return produtosUnicosFiltro.filter(p=> String(p.desc||'').toLowerCase().includes(q) || String(p.prod||'').toLowerCase().includes(q)).slice(0,60);
+    }
+    function drawTags(){
+      const box = $('#cp-produto-tags'); if(!box) return; box.innerHTML='';
+      filters.produtos.forEach(prod=>{
+        const p = produtosUnicosFiltro.find(x=>x.prod===prod); if(!p) return;
+        const t = document.createElement('div'); t.className='cp-client-tag';
+        t.innerHTML = '<span>'+String(p.desc||prod).slice(0,26)+'</span><b>&times;</b>';
+        t.querySelector('b').onclick=(ev)=>{ ev.stopPropagation(); filters.produtos = filters.produtos.filter(x=>x!==prod); drawTags(); renderContent(); };
+        box.appendChild(t);
+      });
+    }
+    drawTags();
+    if(!produtoFilterBound){
+      input.addEventListener('focus', ()=>{ dd.classList.add('open'); draw(filterList(input.value)); });
+      input.addEventListener('input', ()=> draw(filterList(input.value)));
+      document.addEventListener('click',(e)=>{ if(!e.target.closest('#cp-produto-group .cp-clientsearch')) dd.classList.remove('open'); });
+      produtoFilterBound = true;
+    }
+  }
+
+  const TABS_SEM_FILTRO_GLOBAL = ['loja'];
+  let filtrosColapsados = true; // ocultos por padrão ao abrir o app
+
+  function atualizaVisibilidadeFiltros(){
+    const shell = $('#cp-filters-shell');
+    if(!shell) return;
+    shell.style.display = TABS_SEM_FILTRO_GLOBAL.includes(activeTab) ? 'none' : 'block';
+    const prodGroup = $('#cp-produto-group');
+    if(prodGroup) prodGroup.style.display = (activeTab==='produto') ? 'flex' : 'none';
+  }
+
+  function atualizaColapsoFiltros(){
+    const wrap = $('#cp-filters-wrap');
+    const btn = $('#cp-filters-toggle-btn');
+    if(!wrap || !btn) return;
+    clearTimeout(wrap._cpOverflowTimer);
+    if(filtrosColapsados){
+      const alturaAtual = $('#cp-filters').scrollHeight;
+      wrap.style.overflow = 'hidden';
+      wrap.style.maxHeight = alturaAtual + 'px'; // trava no valor atual antes de recolher, senão não anima partindo de "none"
+      void wrap.offsetHeight; // força reflow
+      requestAnimationFrame(()=>{ wrap.style.maxHeight = '0px'; });
+      btn.classList.remove('open');
+      btn.setAttribute('aria-expanded','false');
+    } else {
+      wrap.style.overflow = 'hidden'; // fica escondido só durante a animação
+      wrap.style.maxHeight = $('#cp-filters').scrollHeight + 'px';
+      btn.classList.add('open');
+      btn.setAttribute('aria-expanded','true');
+      wrap._cpOverflowTimer = setTimeout(()=>{
+        if(!filtrosColapsados){
+          wrap.style.overflow = 'visible'; // libera pra dropdowns (mês/cliente) aparecerem por cima
+          wrap.style.maxHeight = 'none';
+        }
+      }, 260);
+    }
+  }
+
+  function inicializaToggleFiltros(){
+    const btn = $('#cp-filters-toggle-btn');
+    if(!btn || btn.dataset.bound) return;
+    btn.dataset.bound = '1';
+    btn.addEventListener('click', ()=>{
+      filtrosColapsados = !filtrosColapsados;
+      atualizaColapsoFiltros();
+    });
+    window.addEventListener('resize', ()=>{
+      if(!filtrosColapsados) atualizaColapsoFiltros();
+    });
+  }
+
+  function resetFilters(){
+    filters = { period:'atual', meses:[], clientes:[], areas:[], produtos:[] };
+    resumoGrupoSelecionado = null;
+    abcClasseSelecionada = null;
+    $$('.cp-chip[data-period]').forEach(c=> c.classList.toggle('on', c.dataset.period==='atual'));
+    const mesToggle = $('#cp-mes-toggle');
+    if(mesToggle) mesToggle.placeholder='Todos os meses';
+    const mesTags = $('#cp-mes-tags');
+    if(mesTags) mesTags.innerHTML='';
+    const mesDD = $('#cp-mes-dropdown');
+    if(mesDD) mesDD.classList.remove('open');
+    const input = $('#cp-client-input');
+    if(input) input.value='';
+    const dd = $('#cp-client-dropdown');
+    if(dd) dd.classList.remove('open');
+    const tags = $('#cp-client-tags');
+    if(tags) tags.innerHTML='';
+    const prodInput = $('#cp-produto-input');
+    if(prodInput) prodInput.value='';
+    const prodDD = $('#cp-produto-dropdown');
+    if(prodDD) prodDD.classList.remove('open');
+    const prodTags = $('#cp-produto-tags');
+    if(prodTags) prodTags.innerHTML='';
+    buildAreaFilter();
+  }
+  $('#cp-clear-filters')?.addEventListener('click', ()=>{ resetFilters(); renderContent(); });
+
+  $$('.cp-chip[data-period]').forEach(chip=>{
+    chip.addEventListener('click', ()=>{
+      $$('.cp-chip').forEach(c=>c.classList.remove('on'));
+      chip.classList.add('on');
+      filters.period = chip.dataset.period;
+      renderContent();
+    });
+  });
+
+  function getFiltered(){
+    let years;
+    if(filters.period==='atual') years=[anoAtual];
+    else if(filters.period==='anterior') years=[anoAnterior];
+    else years=[anoAtual, anoAnterior];
+    return RAW.filter(r=>{
+      if(!years.includes(r.ano)) return false;
+      if(filters.meses.length && !filters.meses.includes(r.mes)) return false;
+      if(filters.clientes.length && !filters.clientes.includes(r.codigo)) return false;
+      if(filters.areas.length && !filters.areas.includes(String(r.area))) return false;
+      return true;
+    });
+  }
+
+  function fmtL(v){ return v.toLocaleString('pt-BR',{maximumFractionDigits:0})+' L'; }
+  function fmtR(v){ return v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'}); }
+
+  async function renderContent(){
+    const el = $('#cp-content');
+    if(RAW.length===0) return;
+    const cfg = TABS.find(t=>t.id===activeTab);
+    if(!cfg.ready){
+      const s = SOON_COPY[activeTab];
+      el.innerHTML = '<div class="cp-soon"><b>'+s.t+'</b>'+s.d+'</div>';
+      return;
+    }
+    if(activeTab==='gerencial') return renderGerencial(el);
+    if(activeTab==='cliente') return renderCliente(el);
+    if(activeTab==='visitas') return renderVisitas(el);
+    if(activeTab==='ranking') return renderRanking(el);
+    if(activeTab==='abc') return renderABC(el);
+    if(activeTab==='auditoria') return renderAuditoria(el);
+    if(activeTab==='produto') return renderProdutoConsulta(el);
+    if(activeTab==='resumo') return renderResumo(el);
+    if(activeTab==='estoque') return renderEstoque(el);
+    if(activeTab==='inteligencia') return renderInteligencia(el);
+    if(activeTab==='loja') return renderLoja(el);
+    if(activeTab==='lojaResultados') return renderLojaResultados(el);
+  }
+
+  function buildAreaLabels(){
+    const counts = {}; // area -> {cidade: n}
+    RAW.forEach(r=>{
+      if(r.area==null) return;
+      counts[r.area] = counts[r.area] || {};
+      counts[r.area][r.cidade] = (counts[r.area][r.cidade]||0)+1;
+    });
+    AREA_LABELS = {};
+    Object.entries(counts).forEach(([area,cidades])=>{
+      const top = Object.entries(cidades).sort((a,b)=>b[1]-a[1])[0];
+      AREA_LABELS[area] = top ? top[0] : ('Área '+area);
+    });
+  }
+
+  function buildAreaFilter(){
+    const box = $('#cp-area-chips');
+    const group = $('#cp-area-group');
+    if(!box) return;
+    const areas = Object.keys(AREA_LABELS).sort((a,b)=>Number(a)-Number(b));
+    if(areas.length===0){
+      group.style.display='flex';
+      box.innerHTML = '<span style="font-size:9px; color:var(--text-dim);">Nenhuma coluna "Area" reconhecida nos dados carregados — reimporte a planilha para atualizar.</span>';
+      return;
+    }
+    if(areas.length===1){ group.style.display='none'; return; }
+    group.style.display='flex';
+    box.innerHTML = '';
+    areas.forEach(area=>{
+      const chip = document.createElement('div');
+      chip.className = 'cp-chip'+(filters.areas.includes(area)?' on':'');
+      chip.textContent = area;
+      chip.onclick = ()=>{
+        const i = filters.areas.indexOf(area);
+        if(i>=0) filters.areas.splice(i,1); else filters.areas.push(area);
+        buildAreaFilter();
+        renderContent();
+      };
+      box.appendChild(chip);
+    });
+  }
+
+  function ultimoMesContiguo(ano){
+    const mesesComDados = new Set(RAW.filter(r=>r.ano===ano).map(r=>r.mes));
+    let m=1;
+    while(mesesComDados.has(m) && m<=12) m++;
+    return m-1; // último mês contínuo a partir de janeiro (para antes do primeiro "buraco")
+  }
+
+  function limitesComparacaoAnual(){
+    const ultimoMes = Math.max(1, ultimoMesContiguo(anoAtual));
+    // último dia do "ultimoMes" em cada ano (Date com dia 0 do mês seguinte = último dia do mês)
+    const limiteAtual = new Date(anoAtual, ultimoMes, 0);
+    const limiteAnterior = new Date(anoAnterior, ultimoMes, 0);
+    return { limiteAtual, limiteAnterior, ultimoMes };
+  }
+
+  function periodLabel(){
+    if(filters.period==='atual') return anoAtual;
+    if(filters.period==='anterior') return anoAnterior;
+    return anoAnterior+' + '+anoAtual;
+  }
+
+  const FERIADOS_CACHE = {};
+  function calcularPascoa(year){
+    const a=year%19, b=Math.floor(year/100), c=year%100, d=Math.floor(b/4), e=b%4,
+      f=Math.floor((b+8)/25), g=Math.floor((b-f+1)/3), h=(19*a+b-d-g+15)%30,
+      i=Math.floor(c/4), k=c%4, l=(32+2*e+2*i-h-k)%7, m=Math.floor((a+11*h+22*l)/451),
+      mes=Math.floor((h+l-7*m+114)/31), dia=((h+l-7*m+114)%31)+1;
+    return new Date(year, mes-1, dia);
+  }
+  function getFeriados(year){
+    if(FERIADOS_CACHE[year]) return FERIADOS_CACHE[year];
+    const pascoa = calcularPascoa(year);
+    const add = (d,n)=> new Date(d.getTime()+n*86400000);
+    const lista = [
+      new Date(year,0,1), add(pascoa,-47), add(pascoa,-2), add(pascoa,60),
+      new Date(year,3,21), new Date(year,4,1), new Date(year,8,7),
+      new Date(year,9,12), new Date(year,10,2), new Date(year,10,15), new Date(year,11,25)
+    ];
+    const set = new Set(lista.map(d=>d.toDateString()));
+    FERIADOS_CACHE[year]=set;
+    return set;
+  }
+  function isDiaUtil(date){
+    const dow = date.getDay();
+    if(dow===0||dow===6) return false;
+    return !getFeriados(date.getFullYear()).has(date.toDateString());
+  }
+  function gerarDiasUteis(desde, quantidade){
+    const dias=[];
+    let cur = new Date(desde.getFullYear(), desde.getMonth(), desde.getDate());
+    while(dias.length<quantidade){
+      if(isDiaUtil(cur)) dias.push(new Date(cur));
+      cur = new Date(cur.getTime()+86400000);
+    }
+    return dias;
+  }
+  const DIA_SEMANA = ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb'];
+
+  async function renderVisitas(el){
+    el.innerHTML = '<div class="cp-empty"><p>Calculando roteiro de visitas...</p></div>';
+
+    const HOJE = new Date();
+    const mKey = monthKey(HOJE);
+    const visited = await loadVisited(mKey);
+
+    const cutoff48 = new Date(HOJE.getTime() - 48*30*86400000); // ~48 meses, sempre p/ padrão histórico
+    const escopoFiltrado = getFiltered(); // respeita Período + Mês + Área + Cliente
+    const codigosComAtividade = new Set(escopoFiltrado.map(r=>r.codigo));
+    const scopeClients = CLIENTS.filter(c=> codigosComAtividade.has(c.codigo) && (!filters.areas.length||filters.areas.includes(String(CLIENT_AREA[c.codigo]))) );
+
+    let plano = scopeClients.map(c=>{
+      const historico = RAW.filter(r=>r.codigo===c.codigo && r.data>=cutoff48);
+      const datasUnicas = Array.from(new Set(historico.map(r=>r.data.toDateString()))).map(s=>new Date(s));
+      const diaTipico = datasUnicas.length? Math.round(datasUnicas.reduce((s,d)=>s+d.getDate(),0)/datasUnicas.length) : 15;
+      const lastDate = datasUnicas.length? new Date(Math.max(...datasUnicas.map(d=>d.getTime()))) : null;
+      const diasDesde = lastDate? Math.round((HOJE-lastDate)/86400000) : null;
+      const linhasCliente = escopoFiltrado.filter(r=>r.codigo===c.codigo);
+      const notasSet = new Set(linhasCliente.map(r=> r.nota!=null ? ('n:'+r.nota) : ('d:'+r.data.toDateString())));
+      const comprasPeriodo = notasSet.size;
+      return {codigo:c.codigo, nome:c.nome, cidade: CLIENT_CIDADE[c.codigo]||'Sem cidade', diaTipico, lastDate, diasDesde, comprasPeriodo, visitado: !!visited[c.codigo]};
+    });
+
+    const jaVisitados = plano.filter(p=>p.visitado).length;
+    const pendentes = plano.filter(p=>!p.visitado);
+
+    // agrupa por cidade: todo mundo da mesma cidade recebe a mesma data sugerida
+    const grupos = {};
+    pendentes.forEach(p=>{
+      if(!grupos[p.cidade]) grupos[p.cidade] = [];
+      grupos[p.cidade].push(p);
+    });
+    const listaGrupos = Object.entries(grupos).map(([cidade, membros])=>{
+      const diaMedio = membros.reduce((s,m)=>s+m.diaTipico,0)/membros.length;
+      return {cidade, membros, diaMedio};
+    }).sort((a,b)=> a.diaMedio-b.diaMedio || a.cidade.localeCompare(b.cidade));
+
+    const diasUteis = gerarDiasUteis(HOJE, listaGrupos.length);
+    listaGrupos.forEach((g,i)=>{
+      g.membros.forEach(m=>{ m.sugestao = diasUteis[i]; });
+    });
+    pendentes.sort((a,b)=> (a.sugestao-b.sugestao) || a.cidade.localeCompare(b.cidade) || a.nome.localeCompare(b.nome));
+
+    const nomesMes = ['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];
+
+    el.innerHTML = `
+      <div class="cp-section-title cp-noprint"><span class="dash"></span>Roteiro de visitas ${filters.clientes.length? '· cliente(s) selecionado(s)':''}</div>
+      <div class="cp-sub cp-noprint">Sugestão a partir de <b>${nomesMes[HOJE.getMonth()]} de ${HOJE.getFullYear()}</b> (mês atual em diante). Clientes da mesma cidade recebem a mesma data de visita, pra dar pra atender todo mundo na mesma viagem; cidades diferentes ficam em dias úteis diferentes (pulando sábados, domingos e feriados nacionais), ordenadas pela época do mês em que cada cidade costuma comprar — se o mês atual não tiver dias suficientes, a distribuição continua nos meses seguintes. A lista considerada é a de quem comprou em ${periodLabel()}. Marque a caixa ao lado do nome quando visitar — ele sai da lista automaticamente.</div>
+      <div class="cp-kpi-grid cp-noprint">
+        <div class="cp-kpi"><span class="lbl">Clientes na seleção (${periodLabel()})</span><span class="val">${plano.length}</span></div>
+        <div class="cp-kpi"><span class="lbl">Total de clientes na base</span><span class="val">${CLIENTS.length}</span></div>
+        <div class="cp-kpi"><span class="lbl">Já marcados como visitados</span><span class="val" style="color:var(--pos);">${jaVisitados}</span></div>
+      </div>
+      <div class="cp-panel" id="cp-print-area">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; flex-wrap:wrap; gap:6px;">
+          <div class="cp-section-title" style="margin:0;"><span class="dash"></span>Lista de clientes para visitar</div>
+          <div class="cp-noprint" style="display:flex; gap:6px;">
+            <button onclick="window.print()" style="background:var(--steel); color:#fff; border:none; border-radius:7px; font-size:10px; font-weight:700; padding:6px 10px; cursor:pointer;">Exportar PDF desta lista</button>
+            <button id="cp-copy-visitas" style="background:var(--panel-2); color:var(--text); border:1px solid var(--line); border-radius:7px; font-size:10px; font-weight:700; padding:6px 10px; cursor:pointer;">Copiar lista</button>
+          </div>
+        </div>
+        <div style="max-height:460px; overflow-y:auto;">
+        <table class="cp-table">
+          <thead><tr>
+            <th style="width:26px"></th><th>Cliente</th><th style="width:90px">Cidade</th><th style="width:95px">Sugestão de visita</th><th style="width:95px">Última compra</th>
+            <th style="width:60px">Dias desde</th><th style="width:75px">Nº compras (${periodLabel()})</th>
+          </tr></thead>
+          <tbody>
+          ${pendentes.map(p=>`
+            <tr>
+              <td style="text-align:center;"><input type="checkbox" onchange="window.cpToggleVisita('${p.codigo}')" style="width:15px;height:15px; cursor:pointer;"/></td>
+              <td class="name">${p.nome}</td>
+              <td>${p.cidade}</td>
+              <td>${p.sugestao? p.sugestao.toLocaleDateString('pt-BR')+' ('+DIA_SEMANA[p.sugestao.getDay()]+')' : '—'}</td>
+              <td>${p.lastDate? p.lastDate.toLocaleDateString('pt-BR') : '—'}</td>
+              <td class="${p.diasDesde>60?'':''}" style="${p.diasDesde>60?'color:var(--neg);':''}">${p.diasDesde!=null? p.diasDesde+' dias' : '—'}</td>
+              <td>${p.comprasPeriodo}</td>
+            </tr>`).join('') || '<tr><td colspan="7" style="color:var(--text-dim)">Nenhum cliente pendente nesse recorte.</td></tr>'}
+          </tbody>
+        </table>
+        </div>
+      </div>
+    `;
+
+    const copyBtn = $('#cp-copy-visitas');
+    if(copyBtn){
+      copyBtn.onclick = ()=>{
+        const linhas = pendentes.map(p=> [
+          p.nome,
+          p.cidade,
+          p.sugestao? p.sugestao.toLocaleDateString('pt-BR')+' ('+DIA_SEMANA[p.sugestao.getDay()]+')' : '—',
+          p.lastDate? p.lastDate.toLocaleDateString('pt-BR') : '—',
+          p.diasDesde!=null? p.diasDesde+' dias' : '—',
+          p.comprasPeriodo
+        ].join('\t'));
+        const texto = 'Cliente\tCidade\tSugestão de visita\tÚltima compra\tDias desde\tNº compras ('+periodLabel()+')\n' + linhas.join('\n');
+        navigator.clipboard.writeText(texto).then(()=>{
+          copyBtn.textContent = 'Copiado!';
+          setTimeout(()=>{ copyBtn.textContent = 'Copiar lista'; }, 1500);
+        }).catch(()=>{ copyBtn.textContent = 'Não consegui copiar'; setTimeout(()=>{ copyBtn.textContent = 'Copiar lista'; }, 1800); });
+      };
+    }
+  }
+
+  async function renderRanking(el){
+    const tags = await loadProductTags();
+    const prodAusenteRank = new Set(Object.keys(tags).filter(p=> (tags[p]||[]).includes('Ausentes')));
+    const data = getFiltered().filter(r=> !prodAusenteRank.has(r.prod));
+    const prodTotals = {};
+    data.forEach(r=>{ prodTotals[r.desc] = (prodTotals[r.desc]||0) + r.quant; });
+    const totalGeral = Object.values(prodTotals).reduce((s,v)=>s+v,0);
+    const ranking = Object.entries(prodTotals).sort((a,b)=>b[1]-a[1]).slice(0,30);
+    const max = ranking.length? ranking[0][1] : 1;
+    let acumulado = 0;
+
+    el.innerHTML = `
+      <div class="cp-section-title"><span class="dash"></span>Ranking Top 30 · ${periodLabel()}${filters.clientes.length? ' · cliente(s) selecionado(s)':''}</div>
+      <div class="cp-sub">Produtos com maior volume no recorte filtrado (Período, Mês, Área, Cliente) · ${fmtL(totalGeral)} no total · produtos marcados como "Ausentes" não entram nesta lista</div>
+      <div class="cp-panel">
+        <div style="max-height:560px; overflow-y:auto;">
+        <table class="cp-table">
+          <thead><tr>
+            <th style="width:26px">#</th><th>Produto</th><th style="width:75px">Litros</th>
+            <th style="width:55px">% total</th><th style="width:55px">% acum.</th><th style="width:90px"></th>
+          </tr></thead>
+          <tbody>
+          ${ranking.map(([d,v],i)=>{
+            acumulado += v;
+            const pct = totalGeral? (v/totalGeral*100):0;
+            const pctAcum = totalGeral? (acumulado/totalGeral*100):0;
+            return `<tr>
+              <td class="mono">${i+1}</td>
+              <td class="name">${d.slice(0,40)}</td>
+              <td>${v.toLocaleString('pt-BR',{maximumFractionDigits:0})}</td>
+              <td>${pct.toFixed(1)}%</td>
+              <td>${pctAcum.toFixed(1)}%</td>
+              <td><div class="cp-bar-bg"><div class="cp-bar-fill" style="width:${(v/max*100).toFixed(0)}%"></div></div></td>
+            </tr>`;
+          }).join('') || '<tr><td colspan="6" style="color:var(--text-dim)">Sem dados no recorte selecionado.</td></tr>'}
+          </tbody>
+        </table>
+        </div>
+      </div>
+    `;
+  }
+
+  async function renderABC(el){
+    const tags = await loadProductTags();
+    const prodAusente = new Set(Object.keys(tags).filter(p=> (tags[p]||[]).includes('Ausentes')));
+    const data = getFiltered().filter(r=> !prodAusente.has(r.prod));
+    const prodTotals = {};
+    data.forEach(r=>{ prodTotals[r.desc] = (prodTotals[r.desc]||0) + r.quant; });
+    const totalGeral = Object.values(prodTotals).reduce((s,v)=>s+v,0);
+    const lista = Object.entries(prodTotals).sort((a,b)=>b[1]-a[1]);
+
+    let acumulado = 0;
+    const classificados = lista.map(([d,v])=>{
+      acumulado += v;
+      const pctAcum = totalGeral? (acumulado/totalGeral*100) : 0;
+      const classe = pctAcum<=80 ? 'A' : (pctAcum<=95 ? 'B' : 'C');
+      return {desc:d, v, pct: totalGeral? (v/totalGeral*100):0, pctAcum, classe};
+    });
+
+    const resumo = {A:{n:0,vol:0}, B:{n:0,vol:0}, C:{n:0,vol:0}};
+    classificados.forEach(p=>{ resumo[p.classe].n++; resumo[p.classe].vol+=p.v; });
+    const cores = {A:'var(--pos)', B:'var(--steel)', C:'var(--neg)'};
+    const max = classificados.length? classificados[0].v : 1;
+
+    el.innerHTML = `
+      <div class="cp-section-title"><span class="dash"></span>Curva ABC · ${periodLabel()}${filters.clientes.length? ' · cliente(s) selecionado(s)':''}</div>
+      <div class="cp-sub">Classe A = até 80% do volume acumulado, B = até 95%, C = restante. Baseado no recorte filtrado (Período, Mês, Área, Cliente). Produtos marcados como "Ausentes" não entram nesta análise. Toque num cartão pra ver a lista da classe; toque de novo pra esconder.</div>
+      <div class="cp-kpi-grid">
+        ${['A','B','C'].map(cl=>`
+          <div class="cp-kpi" style="border-color:${cores[cl]}; cursor:pointer; ${abcClasseSelecionada===cl?`background:${cl==='A'?'rgba(111,169,107,.14)':cl==='B'?'rgba(76,122,150,.14)':'rgba(201,99,75,.14)'};`:''}" onclick="window.cpToggleClasseABC('${cl}')">
+            <span class="lbl">Classe ${cl}</span>
+            <span class="val" style="color:${cores[cl]};">${resumo[cl].n} produtos</span>
+            <span class="delta">${totalGeral? (resumo[cl].vol/totalGeral*100).toFixed(1):'0'}% do volume</span>
+          </div>`).join('')}
+      </div>
+      ${abcClasseSelecionada ? (()=>{
+        const cl = abcClasseSelecionada;
+        const listaClasse = classificados.filter(p=>p.classe===cl);
+        const maxCl = listaClasse.length? Math.max(...listaClasse.map(p=>p.v)) : 1;
+        return `
+        <div class="cp-panel" style="border-color:${cores[cl]};">
+          <div class="cp-section-title" style="margin-top:0;"><span class="dash"></span>Produtos da Classe ${cl} (${listaClasse.length})</div>
+          <div style="max-height:480px; overflow-y:auto;">
+          <table class="cp-table">
+            <thead><tr>
+              <th style="width:26px">#</th><th>Produto</th><th style="width:75px">Litros</th>
+              <th style="width:55px">% total</th><th style="width:55px">% acum.</th><th style="width:70px"></th>
+            </tr></thead>
+            <tbody>
+            ${listaClasse.map((p,i)=>`
+              <tr>
+                <td class="mono">${i+1}</td>
+                <td class="name">${p.desc}</td>
+                <td>${p.v.toLocaleString('pt-BR',{maximumFractionDigits:0})}</td>
+                <td>${p.pct.toFixed(1)}%</td>
+                <td>${p.pctAcum.toFixed(1)}%</td>
+                <td><div class="cp-bar-bg"><div class="cp-bar-fill" style="width:${(p.v/maxCl*100).toFixed(0)}%; background:${cores[cl]};"></div></div></td>
+              </tr>`).join('') || '<tr><td colspan="6" style="color:var(--text-dim)">Sem produtos nesta classe.</td></tr>'}
+            </tbody>
+          </table>
+          </div>
+        </div>`;
+      })() : ''}
+    `;
+  }
+
+  function renderResumo(el){
+    const data = getFiltered();
+    const codigosAtivos = new Set(data.map(r=>r.codigo));
+    const ativos = CLIENTS.filter(c=>codigosAtivos.has(c.codigo));
+    const inativos = CLIENTS.length - ativos.length;
+    const volumeTotal = data.reduce((s,r)=>s+r.quant,0);
+
+    const notasPorCliente = {};
+    data.forEach(r=>{
+      if(!notasPorCliente[r.codigo]) notasPorCliente[r.codigo] = new Set();
+      notasPorCliente[r.codigo].add(r.nota!=null ? ('n:'+r.nota) : ('d:'+r.data.toDateString()));
+    });
+
+    const freqList = ativos.map(c=>({
+      codigo:c.codigo, nome:c.nome,
+      notas: notasPorCliente[c.codigo]? notasPorCliente[c.codigo].size : 0,
+      volume: data.filter(r=>r.codigo===c.codigo).reduce((s,r)=>s+r.quant,0)
+    }));
+    freqList.sort((a,b)=>b.notas-a.notas);
+
+    const totalNotas = freqList.reduce((s,f)=>s+f.notas,0);
+    const ticketMedio = totalNotas? volumeTotal/totalNotas : 0;
+
+    const n = freqList.length;
+    const corte1 = Math.ceil(n/3), corte2 = Math.ceil(2*n/3);
+    const alta = freqList.slice(0,corte1);
+    const media = freqList.slice(corte1,corte2);
+    const baixa = freqList.slice(corte2);
+    const top10 = freqList.slice(0,10);
+    const maxNotas = top10.length? top10[0].notas : 1;
+
+    el.innerHTML = `
+      <div class="cp-section-title"><span class="dash"></span>Resumo executivo · ${periodLabel()}</div>
+      <div class="cp-sub">Indicadores da carteira no recorte filtrado (Período, Mês, Área, Cliente).</div>
+      <div class="cp-kpi-grid">
+        <div class="cp-kpi"><span class="lbl">Carteira total</span><span class="val">${CLIENTS.length}</span></div>
+        <div class="cp-kpi"><span class="lbl">Ativos no período</span><span class="val" style="color:var(--pos);">${ativos.length}</span></div>
+        <div class="cp-kpi"><span class="lbl">Inativos no período</span><span class="val" style="color:var(--neg);">${inativos}</span></div>
+        <div class="cp-kpi"><span class="lbl">Volume total</span><span class="val">${fmtL(volumeTotal)}</span></div>
+        <div class="cp-kpi"><span class="lbl">Ticket médio</span><span class="val">${ticketMedio.toLocaleString('pt-BR',{maximumFractionDigits:0})} L/nota</span></div>
+      </div>
+
+      <div class="cp-section-title"><span class="dash"></span>Frequência de compra (clientes ativos)</div>
+      <div class="cp-sub">Divisão em 3 grupos iguais pelo número de notas emitidas no período. Toque num cartão pra ver a lista de clientes do grupo; toque de novo pra esconder.</div>
+      <div class="cp-kpi-grid">
+        <div class="cp-kpi" style="border-color:var(--pos); cursor:pointer; ${resumoGrupoSelecionado==='alta'?'background:rgba(111,169,107,.14);':''}" onclick="window.cpToggleGrupoResumo('alta')"><span class="lbl">Alta frequência</span><span class="val" style="color:var(--pos);">${alta.length}</span><span class="delta">${alta.length? alta[alta.length-1].notas+'+ notas' : ''}</span></div>
+        <div class="cp-kpi" style="border-color:var(--steel); cursor:pointer; ${resumoGrupoSelecionado==='media'?'background:rgba(76,122,150,.14);':''}" onclick="window.cpToggleGrupoResumo('media')"><span class="lbl">Média frequência</span><span class="val" style="color:var(--steel);">${media.length}</span></div>
+        <div class="cp-kpi" style="border-color:var(--neg); cursor:pointer; ${resumoGrupoSelecionado==='baixa'?'background:rgba(201,99,75,.14);':''}" onclick="window.cpToggleGrupoResumo('baixa')"><span class="lbl">Baixa frequência</span><span class="val" style="color:var(--neg);">${baixa.length}</span></div>
+      </div>
+
+      ${resumoGrupoSelecionado ? (()=>{
+        const grupoMap = {alta, media, baixa};
+        const nomeMap = {alta:'Alta frequência', media:'Média frequência', baixa:'Baixa frequência'};
+        const corMap = {alta:'var(--pos)', media:'var(--steel)', baixa:'var(--neg)'};
+        const lista = grupoMap[resumoGrupoSelecionado];
+        const maxG = lista.length? Math.max(...lista.map(f=>f.notas)) : 1;
+        return `
+        <div class="cp-panel" style="border-color:${corMap[resumoGrupoSelecionado]};">
+          <div class="cp-section-title" style="margin-top:0;"><span class="dash"></span>Clientes — ${nomeMap[resumoGrupoSelecionado]} (${lista.length})</div>
+          <div style="max-height:360px; overflow-y:auto;">
+          <table class="cp-table">
+            <thead><tr><th>Cliente</th><th style="width:60px">Notas</th><th style="width:75px">Litros</th><th style="width:100px"></th></tr></thead>
+            <tbody>
+            ${lista.map(f=>`<tr><td class="name" style="font-size:9px; white-space:normal;">${f.nome}</td><td>${f.notas}</td><td>${f.volume.toLocaleString('pt-BR',{maximumFractionDigits:0})}</td>
+            <td><div class="cp-bar-bg"><div class="cp-bar-fill" style="width:${(f.notas/maxG*100).toFixed(0)}%; background:${corMap[resumoGrupoSelecionado]};"></div></div></td></tr>`).join('') || '<tr><td colspan="4" style="color:var(--text-dim)">Nenhum cliente neste grupo.</td></tr>'}
+            </tbody>
+          </table>
+          </div>
+        </div>`;
+      })() : ''}
+
+      <div class="cp-panel">
+        <div class="cp-section-title" style="margin-top:0;"><span class="dash"></span>Top 10 clientes por frequência</div>
+        <table class="cp-table">
+          <thead><tr><th>Cliente</th><th style="width:60px">Notas</th><th style="width:75px">Litros</th><th style="width:100px"></th></tr></thead>
+          <tbody>
+          ${top10.map(f=>`<tr><td class="name" style="font-size:9px; white-space:normal;">${f.nome}</td><td>${f.notas}</td><td>${f.volume.toLocaleString('pt-BR',{maximumFractionDigits:0})}</td>
+          <td><div class="cp-bar-bg"><div class="cp-bar-fill" style="width:${(f.notas/maxNotas*100).toFixed(0)}%"></div></div></td></tr>`).join('') || '<tr><td colspan="4" style="color:var(--text-dim)">Sem clientes ativos nesse recorte.</td></tr>'}
+          </tbody>
+        </table>
+      </div>
+    `;
+  }
+
+  async function renderEstoque(el){
+    const tags = await loadProductTags();
+    const prodAusenteEstoque = new Set(Object.keys(tags).filter(p=> (tags[p]||[]).includes('Ausentes')));
+    const HOJE = new Date();
+    const cutoff48 = new Date(HOJE.getTime() - 48*30*86400000);
+
+    if(filters.clientes.length!==1){
+      el.innerHTML = `<div class="cp-soon"><b>Saúde do estoque</b>Selecione exatamente 1 cliente no filtro "Cliente/Loja" acima para ver os produtos parados dele.</div>`;
+      return;
+    }
+    const cod = filters.clientes[0];
+    const c = CLIENTS.find(x=>x.codigo===cod);
+
+    // agrupa histórico do cliente por produto
+    const combos = {}; // prod -> {desc, datas:[]}
+    RAW.forEach(r=>{
+      if(r.codigo!==cod || r.data<cutoff48 || prodAusenteEstoque.has(r.prod)) return;
+      if(!combos[r.prod]) combos[r.prod] = {desc:r.desc, datas:new Set()};
+      combos[r.prod].datas.add(r.data.toDateString());
+    });
+
+    const alertas = [];
+    Object.values(combos).forEach(p=>{
+      const datasUnicas = Array.from(p.datas).map(s=>new Date(s)).sort((a,b)=>a-b);
+      if(datasUnicas.length<2) return; // precisa de recompra pra ter "padrão"
+      let totalGap=0;
+      for(let i=1;i<datasUnicas.length;i++) totalGap += (datasUnicas[i]-datasUnicas[i-1])/86400000;
+      const avgGap = totalGap/(datasUnicas.length-1);
+      const lastDate = datasUnicas[datasUnicas.length-1];
+      const diasDesde = Math.round((HOJE-lastDate)/86400000);
+      if(diasDesde>60 && diasDesde>avgGap){
+        alertas.push({desc:p.desc, lastDate, diasDesde, avgGap: Math.round(avgGap)});
+      }
+    });
+    alertas.sort((a,b)=> a.desc.toLowerCase().localeCompare(b.desc.toLowerCase()));
+
+    const produtosAfetados = alertas.length;
+
+    el.innerHTML = `
+      <div class="cp-section-title"><span class="dash"></span>Saúde do estoque · ${c?c.nome:cod}</div>
+      <div class="cp-sub">Produtos que este cliente comprava com regularidade (pelo menos 2 compras nos últimos 48 meses) e parou de comprar há mais de 60 dias — considerando sempre o histórico completo e o próprio ritmo de recompra dele. Não muda com Período/Mês, só com Área. Produtos marcados como "Ausentes" não entram nesta lista. Ordenado por nome do produto (A-Z).</div>
+      <div class="cp-kpi-grid">
+        <div class="cp-kpi"><span class="lbl">Alertas</span><span class="val" style="color:var(--neg);">${alertas.length}</span></div>
+        <div class="cp-kpi"><span class="lbl">Produtos afetados</span><span class="val">${produtosAfetados}</span></div>
+      </div>
+      <div class="cp-panel">
+        <div style="max-height:520px; overflow-y:auto;">
+        <table class="cp-table">
+          <thead><tr>
+            <th>Produto</th><th style="width:80px">Última compra</th>
+            <th style="width:55px">Dias sem</th><th style="width:70px">Intervalo médio</th>
+          </tr></thead>
+          <tbody>
+          ${alertas.map(a=>`
+            <tr>
+              <td class="name">${a.desc}</td>
+              <td>${a.lastDate.toLocaleDateString('pt-BR')}</td>
+              <td style="color:var(--neg);">${a.diasDesde}d</td>
+              <td>${a.avgGap}d</td>
+            </tr>`).join('') || '<tr><td colspan="4" style="color:var(--text-dim)">Nenhum alerta para este cliente.</td></tr>'}
+          </tbody>
+        </table>
+        </div>
+      </div>
+    `;
+  }
+
+  function categorizarProduto(desc){
+    const d = (desc||'').toUpperCase();
+    if(d.includes('SKYFROTA')) return 'Skyfrota';
+    if(d.includes('SKYMIX')){
+      if(d.includes(' BP ')||d.startsWith('SKYMIX BP')) return 'Skymix BP';
+      if(d.includes(' PU ')||d.startsWith('SKYMIX PU')) return 'Skymix PU';
+      return 'Skymix outros';
+    }
+    if(d.includes('PRIMER')) return 'Primer';
+    if(d.includes('MASSA')) return 'Massas';
+    if(d.includes('VERNIZ')) return 'Verniz';
+    if(/\bBP\b/.test(d)) return 'BP (linha convencional)';
+    if(/\bPU\b/.test(d)) return 'PU (linha convencional)';
+    return 'Outros';
+  }
+
+  async function renderInteligencia(el){
+    const data = getFiltered();
+    const clientCats = {}; // codigo -> Set(categoria)
+    const catClients = {}; // categoria -> Set(codigo)
+    data.forEach(r=>{
+      const cat = categorizarProduto(r.desc);
+      if(!clientCats[r.codigo]) clientCats[r.codigo] = new Set();
+      clientCats[r.codigo].add(cat);
+      if(!catClients[cat]) catClients[cat] = new Set();
+      catClients[cat].add(r.codigo);
+    });
+    const totalAtivos = Object.keys(clientCats).length;
+
+    const categorias = Object.keys(catClients).sort((a,b)=> catClients[b].size - catClients[a].size);
+
+    // oportunidade: quem compra Skymix (BP/PU/outros) mas não compra Skyfrota
+    const compradoresSkymix = new Set();
+    Object.entries(clientCats).forEach(([cod,cats])=>{
+      if(cats.has('Skymix BP')||cats.has('Skymix PU')||cats.has('Skymix outros')) compradoresSkymix.add(cod);
+    });
+    const compradoresSkyfrota = catClients['Skyfrota'] || new Set();
+    const oportunidade = Array.from(compradoresSkymix).filter(cod=>!compradoresSkyfrota.has(cod))
+      .map(cod=>{
+        const c = CLIENTS.find(x=>x.codigo===cod);
+        const vol = data.filter(r=>r.codigo===cod).reduce((s,r)=>s+r.quant,0);
+        return {codigo:cod, nome: c?c.nome:cod, cats: Array.from(clientCats[cod]).join(', '), vol};
+      }).sort((a,b)=>b.vol-a.vol);
+
+    // Oportunidade de sugestão por cidade (exige 1 cliente selecionado)
+    let blocoSugestao = `<div class="cp-panel"><div class="cp-section-title" style="margin-top:0;"><span class="dash"></span>Oportunidade de sugestão</div><div class="cp-sub">Selecione 1 cliente no filtro "Cliente/Loja" pra ver sugestões individuais de produtos da mesma cidade que ele nunca comprou.</div></div>`;
+    if(filters.clientes.length===1){
+      const tagsInt = await loadProductTags();
+      const cod = filters.clientes[0];
+      const c = CLIENTS.find(x=>x.codigo===cod);
+      const cidadeCliente = CLIENT_CIDADE[cod];
+      const HOJE = new Date();
+      const cutoff24 = new Date(HOJE.getTime() - 24*30*86400000);
+
+      const prodsClienteUltimos24 = new Set(RAW.filter(r=>r.codigo===cod && r.data>=cutoff24).map(r=>r.prod));
+
+      const prodDescMapInt = {};
+      const volPorProdCidade = {};
+      RAW.forEach(r=>{
+        if(r.data<cutoff24) return;
+        if(CLIENT_CIDADE[r.codigo]!==cidadeCliente) return;
+        if(!prodDescMapInt[r.prod]) prodDescMapInt[r.prod]=r.desc;
+        volPorProdCidade[r.prod] = (volPorProdCidade[r.prod]||0)+r.quant;
+      });
+
+      const ehAusente = (p)=> (tagsInt[p]||[]).includes('Ausentes');
+      const ehPreferencial = (desc)=>{ const d=(desc||'').toUpperCase(); return d.includes('VERNIZ')||d.includes('PRIMER'); };
+      const ehSecundaria = (desc)=>{ const d=(desc||'').toUpperCase(); return /\bBP\b/.test(d)||/\bPU\b/.test(d)||/\bES\b/.test(d)||/\bIND\b/.test(d)||/\bSINT\b/.test(d); };
+
+      const candidatos = Object.keys(volPorProdCidade).filter(p=> !prodsClienteUltimos24.has(p) && !ehAusente(p));
+      const preferenciais = candidatos.filter(p=>ehPreferencial(prodDescMapInt[p])).sort((a,b)=>volPorProdCidade[b]-volPorProdCidade[a]);
+      const secundarios = candidatos.filter(p=>!ehPreferencial(prodDescMapInt[p]) && ehSecundaria(prodDescMapInt[p])).sort((a,b)=>volPorProdCidade[b]-volPorProdCidade[a]);
+
+      let sugestoes = preferenciais.slice(0,20).map(p=>({prod:p, pref:true}));
+      if(sugestoes.length<20){
+        sugestoes = sugestoes.concat(secundarios.slice(0, 20-sugestoes.length).map(p=>({prod:p, pref:false})));
+      }
+
+      blocoSugestao = `
+        <div class="cp-panel">
+          <div class="cp-section-title" style="margin-top:0;"><span class="dash"></span>Oportunidade de sugestão — ${c?c.nome:cod}</div>
+          <div class="cp-sub">Produtos vendidos em <b>${cidadeCliente||'cidade não identificada'}</b> nos últimos 24 meses que este cliente nunca comprou nesse período. Prioridade pra Verniz/Primer; completa com BP/PU/ES/IND/SINT. Produtos "Ausentes" nunca aparecem. Máximo 20 itens.</div>
+          <table class="cp-table">
+            <thead><tr><th>Produto</th><th style="width:70px">Prioridade</th><th style="width:80px">Volume na cidade</th></tr></thead>
+            <tbody>
+            ${sugestoes.map(s=>`<tr><td class="name">${prodDescMapInt[s.prod]}</td><td style="color:${s.pref?'var(--pos)':'var(--text-dim)'};">${s.pref?'Verniz/Primer':'BP/PU/ES/IND/SINT'}</td><td>${volPorProdCidade[s.prod].toLocaleString('pt-BR',{maximumFractionDigits:0})}</td></tr>`).join('') || '<tr><td colspan="3" style="color:var(--text-dim)">Nenhuma sugestão encontrada — ou não há dados de cidade suficientes.</td></tr>'}
+            </tbody>
+          </table>
+        </div>`;
+    }
+
+    el.innerHTML = `
+      <div class="cp-section-title"><span class="dash"></span>Inteligência de vendas · ${periodLabel()}${filters.clientes.length? ' · cliente(s) selecionado(s)':''}</div>
+      <div class="cp-sub">Categoria de produto identificada pelo texto da descrição — pode não pegar 100% dos casos (ex.: "Master" não tem um padrão de texto único). Baseado no recorte filtrado (Período, Mês, Área, Cliente).</div>
+      <div class="cp-panel">
+        <div class="cp-section-title" style="margin-top:0;"><span class="dash"></span>Clientes por categoria (${totalAtivos} clientes ativos no recorte)</div>
+        <table class="cp-table">
+          <thead><tr><th>Categoria</th><th style="width:60px">Clientes</th><th style="width:100px">% da carteira ativa</th></tr></thead>
+          <tbody>
+          ${categorias.map(cat=>{
+            const n = catClients[cat].size;
+            const pct = totalAtivos? (n/totalAtivos*100):0;
+            return `<tr><td class="name">${cat}</td><td>${n}</td><td><div class="cp-bar-bg"><div class="cp-bar-fill" style="width:${pct.toFixed(0)}%"></div></div></td></tr>`;
+          }).join('') || '<tr><td colspan="3" style="color:var(--text-dim)">Sem dados no recorte.</td></tr>'}
+          </tbody>
+        </table>
+      </div>
+      <div class="cp-panel">
+        <div class="cp-section-title" style="margin-top:0;"><span class="dash"></span>Oportunidade: compra Skymix, mas não Skyfrota</div>
+        <div class="cp-sub">${oportunidade.length} cliente(s) — ordenado pelo volume comprado no recorte.</div>
+        <div style="max-height:400px; overflow-y:auto;">
+        <table class="cp-table">
+          <thead><tr><th>Cliente</th><th>Já compra</th><th style="width:70px">Litros</th></tr></thead>
+          <tbody>
+          ${oportunidade.map(o=>`<tr><td class="name">${o.nome.slice(0,28)}</td><td class="name" style="font-size:9px;">${o.cats}</td><td>${o.vol.toLocaleString('pt-BR',{maximumFractionDigits:0})}</td></tr>`).join('') || '<tr><td colspan="3" style="color:var(--text-dim)">Nenhuma oportunidade nesse recorte.</td></tr>'}
+          </tbody>
+        </table>
+        </div>
+      </div>
+      ${blocoSugestao}
+    `;
+  }
+
+  let BRAND_OPTIONS = ['(sem marca)','Master','Skymix BP','Skymix PU','Skymix ES,IND,AGRO','Skyfrota','Skyprimer','Massas','Ausentes'];
+  let brandOptionsCarregado = false;
+
+  async function loadBrandOptions(){
+    if(brandOptionsCarregado) return BRAND_OPTIONS;
+    try{
+      const res = await storage.get('brand-options-list');
+      if(res && res.value){
+        const salvo = JSON.parse(res.value);
+        if(Array.isArray(salvo) && salvo.length) BRAND_OPTIONS = salvo;
+      } else {
+        await storage.set('brand-options-list', JSON.stringify(BRAND_OPTIONS));
+      }
+    }catch(err){}
+    brandOptionsCarregado = true;
+    return BRAND_OPTIONS;
+  }
+  async function saveBrandOptions(){
+    try{ await storage.set('brand-options-list', JSON.stringify(BRAND_OPTIONS)); }catch(err){}
+  }
+  window.cpAdicionarMarca = async function(){
+    const input = document.getElementById('cp-nova-marca-input');
+    if(!input) return;
+    const nome = (input.value||'').trim();
+    if(!nome) return;
+    await loadBrandOptions();
+    if(!BRAND_OPTIONS.includes(nome)){
+      BRAND_OPTIONS.push(nome);
+      await saveBrandOptions();
+    }
+    input.value='';
+    renderContent();
+  };
+  window.cpConfirmarExcluirMarca = function(el, nome){
+    if(el.dataset.confirmando==='1'){
+      window.cpRemoverMarca(nome);
+      return;
+    }
+    el.dataset.confirmando = '1';
+    const originalHTML = el.innerHTML;
+    const originalTitle = el.title;
+    el.innerHTML = 'confirmar?';
+    el.style.fontSize = '9px';
+    el.title = 'Toque de novo para confirmar a exclusão';
+    setTimeout(()=>{
+      if(el && el.isConnected){
+        el.dataset.confirmando = '0';
+        el.innerHTML = originalHTML;
+        el.style.fontSize = '12px';
+        el.title = originalTitle;
+      }
+    }, 3000);
+  };
+
+  window.cpRemoverMarca = async function(nome){
+    if(nome==='(sem marca)') return;
+    await loadBrandOptions();
+    BRAND_OPTIONS = BRAND_OPTIONS.filter(o=>o!==nome);
+    await saveBrandOptions();
+    const tags = await loadProductTags();
+    let mudou = false;
+    Object.keys(tags).forEach(p=>{
+      if(tags[p] && tags[p].includes(nome)){
+        tags[p] = tags[p].filter(m=>m!==nome);
+        if(tags[p].length===0) delete tags[p];
+        mudou = true;
+      }
+    });
+    if(mudou){ PRODUCT_TAGS = tags; await saveProductTags(); }
+    renderContent();
+  };
+  let PRODUCT_TAGS = null;
+  let lojaMarcaSelecionada = 'Master';
+  let resumoGrupoSelecionado = null;
+  let abcClasseSelecionada = null;
+  window.cpToggleClasseABC = function(cl){
+    abcClasseSelecionada = (abcClasseSelecionada===cl) ? null : cl;
+    renderContent();
+  };
+  window.cpToggleGrupoResumo = function(grupo){
+    resumoGrupoSelecionado = (resumoGrupoSelecionado===grupo) ? null : grupo;
+    renderContent();
+  };
+  let lojaBusca = '';
+  let lojaFiltradosAtual = [];
+  let lojaPollInterval = null;
+  let lojaSelecionados = new Set();
+  let lojaBulkMarca = 'Master';
+
+  async function loadProductTags(){
+    if(PRODUCT_TAGS) return PRODUCT_TAGS;
+    try{
+      const res = await storage.get('product-brand-tags');
+      let raw = (res && res.value) ? JSON.parse(res.value) : {};
+      Object.keys(raw).forEach(k=>{ if(typeof raw[k]==='string') raw[k]=[raw[k]]; }); // migração formato antigo
+      PRODUCT_TAGS = raw;
+    }catch(err){ PRODUCT_TAGS = {}; }
+    return PRODUCT_TAGS;
+  }
+  async function saveProductTags(){
+    try{ await storage.set('product-brand-tags', JSON.stringify(PRODUCT_TAGS)); }catch(err){}
+  }
+  window.cpAplicarMarcasEmMassa = async function(prods, marcas){
+    const tags = await loadProductTags();
+    prods.forEach(prod=>{
+      const atuais = tags[prod] || [];
+      marcas.forEach(m=>{ if(!atuais.includes(m)) atuais.push(m); });
+      tags[prod] = atuais;
+    });
+    PRODUCT_TAGS = tags;
+    await saveProductTags();
+    lojaSelecionados.clear();
+    renderContent();
+  };
+  window.cpRemoverBadge = async function(prod, marca){
+    const tags = await loadProductTags();
+    if(tags[prod]){
+      tags[prod] = tags[prod].filter(m=>m!==marca);
+      if(tags[prod].length===0) delete tags[prod];
+    }
+    PRODUCT_TAGS = tags;
+    await saveProductTags();
+    renderContent();
+  };
+  window.cpSetLojaMarca = function(m){ lojaMarcaSelecionada = m; renderContent(); };
+
+  window.cpSetLojaBusca = function(v){ lojaBusca = v; renderContent(); };
+
+  async function renderLoja(el){
+   try{
+    el.innerHTML = '<div class="cp-empty"><p>Carregando marcações...</p></div>';
+    const tags = await loadProductTags();
+    await loadBrandOptions();
+
+    const produtosUnicos = [];
+    const vistos = new Set();
+    RAW.forEach(r=>{
+      if(!vistos.has(r.prod)){ vistos.add(r.prod); produtosUnicos.push({prod:r.prod, desc:r.desc}); }
+    });
+    produtosUnicos.sort((a,b)=>a.desc.localeCompare(b.desc));
+    const totalMarcados = produtosUnicos.filter(p=>tags[p.prod] && tags[p.prod].length).length;
+
+    el.innerHTML = `
+      <div class="cp-section-title"><span class="dash"></span>Marcar produtos</div>
+      <div class="cp-sub">Busque o produto, marque os que quiser na lista (checkbox) e escolha a(s) marca(s) pra aplicar de uma vez. ${totalMarcados} de ${produtosUnicos.length} produtos já classificados. A análise por marca fica na aba "5b. Resultados por marca".</div>
+
+      <div style="display:flex; gap:6px; margin-bottom:10px;">
+        <input id="cp-loja-busca" type="text" placeholder="Buscar produto por nome ou código (ex: verniz)..." value="${lojaBusca.replace(/"/g,'&quot;')}"
+          style="flex:1; background:var(--panel); color:var(--text); border:1px solid var(--line); border-radius:8px; font-size:12px; padding:10px 12px;"/>
+        <button id="cp-loja-buscar-btn" style="background:var(--accent); color:#191308; border:none; border-radius:8px; font-size:11px; font-weight:700; padding:0 16px; cursor:pointer;">Buscar</button>
+        <button id="cp-loja-limpar-busca" title="Limpar busca" style="background:var(--panel-2); color:var(--text-dim); border:1px solid var(--line); border-radius:8px; font-size:14px; font-weight:700; padding:0 14px; cursor:pointer;">&times;</button>
+      </div>
+      <div id="cp-loja-toolbar" style="display:none; align-items:center; gap:8px; margin-bottom:10px; flex-wrap:wrap; position:relative;">
+        <label style="display:flex; align-items:center; gap:5px; font-size:10px; color:var(--text-dim); cursor:pointer;">
+          <input type="checkbox" id="cp-loja-selall" style="width:14px;height:14px;"/> selecionar todos
+        </label>
+        <span id="cp-loja-count" style="font-size:10px; color:var(--text-dim);"></span>
+        <button id="cp-loja-marcar-btn" style="background:var(--accent); color:#191308; border:none; border-radius:7px; font-size:10px; font-weight:700; padding:7px 10px; cursor:pointer;">Marcar selecionados ▾</button>
+        <div id="cp-loja-tooltip" style="display:none; position:absolute; top:110%; left:0; z-index:40; background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:10px; min-width:220px; box-shadow:0 6px 18px rgba(0,0,0,.4);"></div>
+      </div>
+      <div id="cp-loja-lista"></div>
+    `;
+
+    const listaBox = $('#cp-loja-lista');
+    const buscaInput = $('#cp-loja-busca');
+    const toolbar = $('#cp-loja-toolbar');
+    const tooltipBox = $('#cp-loja-tooltip');
+    const marcasDisponiveis = BRAND_OPTIONS.filter(o=>o!=='(sem marca)');
+
+    function badge(prod, marca){
+      return `<span class="cp-client-tag" style="background:var(--steel); font-size:8px; cursor:pointer;" onclick="event.stopPropagation(); window.cpRemoverBadge('${prod}','${marca}')">${marca}<b style="margin-left:2px;">&times;</b></span>`;
+    }
+
+    function desenhaLista(){
+      const busca = buscaInput.value.toLowerCase().trim();
+      lojaBusca = buscaInput.value;
+      lojaSelecionados.clear();
+      tooltipBox.style.display='none';
+      if(busca.length<2){
+        lojaFiltradosAtual = [];
+        toolbar.style.display='none';
+        listaBox.innerHTML = '<div class="cp-sub" style="padding:24px 0; text-align:center;">Digite pelo menos 2 letras e toque em "Buscar" (a base tem '+produtosUnicos.length.toLocaleString('pt-BR')+' itens, por isso a lista só aparece depois da busca).</div>';
+        return;
+      }
+      const filtrados = produtosUnicos.filter(p=> String(p.desc||'').toLowerCase().includes(busca) || String(p.prod||'').toLowerCase().includes(busca));
+      lojaFiltradosAtual = filtrados;
+      toolbar.style.display = filtrados.length? 'flex' : 'none';
+      atualizaContador();
+      listaBox.innerHTML = `
+        <div style="max-height:520px; overflow-y:auto; display:flex; flex-direction:column; gap:8px;">
+        ${filtrados.slice(0,300).map(p=>{
+          const atuais = tags[p.prod]||[];
+          return `
+          <label style="display:flex; gap:10px; align-items:flex-start; background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:11px 13px; cursor:pointer;">
+            <input type="checkbox" data-prod="${p.prod}" class="cp-loja-check" style="width:16px;height:16px; margin-top:2px; flex:none; cursor:pointer;"/>
+            <div style="flex:1;">
+              <div style="font-size:11px;">${String(p.desc||'(sem descrição)').slice(0,60)}</div>
+              <div class="mono" style="font-size:8px; color:var(--text-dim); margin:2px 0 6px 0;">${p.prod||'—'}</div>
+              <div style="display:flex; flex-wrap:wrap; gap:4px;">${atuais.map(m=>badge(p.prod,m)).join('') || '<span style="font-size:8px; color:var(--text-dim);">sem marca ainda</span>'}</div>
+            </div>
+          </label>`;
+        }).join('') || '<div class="cp-sub" style="padding:20px 0; text-align:center;">Nenhum produto encontrado.</div>'}
+        </div>
+        ${filtrados.length>300? `<div class="cp-sub" style="margin-top:8px;">Mostrando 300 de ${filtrados.length} — refine a busca para ver outros.</div>` : ''}
+      `;
+      $$('.cp-loja-check', listaBox).forEach(chk=>{
+        chk.addEventListener('change', ()=>{
+          if(chk.checked) lojaSelecionados.add(chk.dataset.prod); else lojaSelecionados.delete(chk.dataset.prod);
+          atualizaContador();
+        });
+      });
+    }
+
+    function atualizaContador(){
+      const countEl = $('#cp-loja-count');
+      if(countEl) countEl.textContent = lojaFiltradosAtual.length.toLocaleString('pt-BR')+' encontrado(s) · '+lojaSelecionados.size+' selecionado(s)';
+    }
+
+    $('#cp-loja-selall').addEventListener('change', (e)=>{
+      $$('.cp-loja-check', listaBox).forEach(chk=>{
+        chk.checked = e.target.checked;
+        if(e.target.checked) lojaSelecionados.add(chk.dataset.prod); else lojaSelecionados.delete(chk.dataset.prod);
+      });
+      atualizaContador();
+    });
+
+    $('#cp-loja-marcar-btn').addEventListener('click', ()=>{
+      if(lojaSelecionados.size===0){ atualizaContador(); return; }
+      const aberto = tooltipBox.style.display==='block';
+      if(aberto){ tooltipBox.style.display='none'; return; }
+      tooltipBox.innerHTML = `
+        <div style="font-size:9px; color:var(--text-dim); margin-bottom:8px; text-transform:uppercase; letter-spacing:.6px;">Aplicar a ${lojaSelecionados.size} produto(s)</div>
+        <div style="display:flex; flex-direction:column; gap:6px; max-height:220px; overflow-y:auto;">
+          ${marcasDisponiveis.map(m=>`<div style="display:flex; align-items:center; justify-content:space-between; gap:6px;">
+            <label style="display:flex; align-items:center; gap:8px; font-size:11px; cursor:pointer; flex:1;"><input type="checkbox" class="cp-tooltip-marca" value="${m}" style="width:14px;height:14px;"/> ${m}</label>
+            <b onclick="window.cpConfirmarExcluirMarca(this, '${m}')" style="cursor:pointer; color:var(--neg); font-size:12px; padding:0 4px;" title="Toque 2x para excluir esta marca">&times;</b>
+          </div>`).join('')}
+        </div>
+        <div style="display:flex; gap:6px; margin-top:10px;">
+          <input id="cp-nova-marca-input" type="text" placeholder="Nova marca..." style="flex:1; background:var(--panel-2); color:var(--text); border:1px solid var(--line); border-radius:6px; font-size:10px; padding:6px 8px;"/>
+          <button onclick="window.cpAdicionarMarca()" style="background:var(--steel); color:#fff; border:none; border-radius:6px; font-size:10px; font-weight:700; padding:6px 10px; cursor:pointer;">+ Adicionar</button>
+        </div>
+        <button id="cp-loja-aplicar" style="margin-top:10px; width:100%; background:var(--accent); color:#191308; border:none; border-radius:7px; font-size:10px; font-weight:700; padding:8px; cursor:pointer;">Aplicar</button>
+      `;
+      tooltipBox.style.display='block';
+      $('#cp-loja-aplicar').addEventListener('click', async ()=>{
+        const marcasEscolhidas = $$('.cp-tooltip-marca', tooltipBox).filter(c=>c.checked).map(c=>c.value);
+        if(marcasEscolhidas.length===0) return;
+        await window.cpAplicarMarcasEmMassa(Array.from(lojaSelecionados), marcasEscolhidas);
+      });
+    });
+
+    document.addEventListener('click', (e)=>{
+      if(!e.target.closest('#cp-loja-toolbar')) tooltipBox.style.display='none';
+    });
+
+    function desenhaListaSegura(){
+      try{
+        desenhaLista();
+      }catch(err){
+        listaBox.innerHTML = '<div class="cp-sub" style="color:var(--neg); padding:16px 0;">Erro ao buscar: '+(err && err.message ? err.message : String(err))+'</div>';
+      }
+    }
+    buscaInput.oninput = desenhaListaSegura;
+    buscaInput.addEventListener('keyup', desenhaListaSegura);
+    buscaInput.addEventListener('change', desenhaListaSegura);
+    $('#cp-loja-buscar-btn').addEventListener('click', desenhaListaSegura);
+    $('#cp-loja-limpar-busca').addEventListener('click', ()=>{
+      buscaInput.value = '';
+      desenhaListaSegura();
+    });
+    if(lojaPollInterval) clearInterval(lojaPollInterval);
+    lojaPollInterval = setInterval(()=>{
+      if(activeTab!=='loja'){ clearInterval(lojaPollInterval); return; }
+      if(buscaInput.value !== lojaBusca) desenhaListaSegura();
+    }, 300);
+    desenhaListaSegura();
+   }catch(err){
+     el.innerHTML = '<div class="cp-soon"><b>Não consegui carregar esta aba</b>Tente trocar de aba e voltar, ou reimportar a planilha. Detalhe: '+(err && err.message ? err.message : 'erro desconhecido')+'</div>';
+   }
+  }
+
+  async function renderLojaResultados(el){
+   try{
+    await loadBrandOptions();
+    const produtosUnicos = [];
+    const vistos = new Set();
+    RAW.forEach(r=>{
+      if(!vistos.has(r.prod)){ vistos.add(r.prod); produtosUnicos.push({prod:r.prod, desc:r.desc}); }
+    });
+    const tags = await loadProductTags();
+
+    const HOJE = new Date();
+    const prodsDaMarca = new Set(produtosUnicos.filter(p=> (tags[p.prod]||[]).includes(lojaMarcaSelecionada)).map(p=>p.prod));
+    const data = getFiltered().filter(r=>prodsDaMarca.has(r.prod));
+    const qtdPedida = data.reduce((s,r)=>s+r.quant,0);
+    const todasLinhasMarca = RAW.filter(r=>prodsDaMarca.has(r.prod));
+    const lastDate = todasLinhasMarca.length? new Date(Math.max(...todasLinhasMarca.map(r=>r.data.getTime()))) : null;
+    const mesesSemCompra = lastDate? Math.floor((HOJE-lastDate)/86400000/30) : null;
+
+    const porProduto = {};
+    data.forEach(r=>{ porProduto[r.desc] = (porProduto[r.desc]||0)+r.quant; });
+    const listaProdutos = Object.entries(porProduto).sort((a,b)=>b[1]-a[1]);
+    const maxProd = listaProdutos.length? listaProdutos[0][1] : 1;
+
+    el.innerHTML = `
+      <div class="cp-section-title"><span class="dash"></span>Resultados por marca · ${periodLabel()}</div>
+      <div class="cp-sub">Cartões abaixo respeitam Período, Mês, Área e Cliente. "Meses sem compra" usa o histórico completo dessa marca. As marcações são feitas na aba "5. Marcar produtos".</div>
+      <div class="cp-filter-group" style="margin-bottom:10px;">
+        <span>Marca</span>
+        <div style="display:flex; gap:6px;">
+          <select onchange="window.cpSetLojaMarca(this.value)" class="cp-select">
+            ${BRAND_OPTIONS.filter(o=>o!=='(sem marca)').map(o=>`<option ${o===lojaMarcaSelecionada?'selected':''}>${o}</option>`).join('')}
+          </select>
+          <button onclick="window.cpSetLojaMarca('${BRAND_OPTIONS[1]}')" title="Limpar seleção de marca" style="background:var(--panel-2); color:var(--text-dim); border:1px solid var(--line); border-radius:7px; font-size:14px; font-weight:700; padding:0 12px; cursor:pointer;">&times;</button>
+        </div>
+      </div>
+      <div class="cp-kpi-grid">
+        <div class="cp-kpi"><span class="lbl">Qtd. pedida (${periodLabel()})</span><span class="val">${fmtL(qtdPedida)}</span></div>
+        <div class="cp-kpi"><span class="lbl">Meses sem compra</span><span class="val" style="color:${mesesSemCompra>2?'var(--neg)':'var(--pos)'};">${mesesSemCompra!=null? mesesSemCompra : '—'}</span></div>
+        <div class="cp-kpi"><span class="lbl">Produtos marcados nessa marca</span><span class="val">${prodsDaMarca.size}</span></div>
+      </div>
+      <div class="cp-panel">
+        <div class="cp-section-title" style="margin-top:0;"><span class="dash"></span>Produtos dessa marca no período</div>
+        <div style="max-height:400px; overflow-y:auto;">
+        <table class="cp-table">
+          <thead><tr><th>Produto</th><th style="width:75px">Litros</th><th style="width:100px"></th></tr></thead>
+          <tbody>
+          ${listaProdutos.map(([d,v])=>`<tr><td class="name">${d.slice(0,38)}</td><td>${v.toLocaleString('pt-BR',{maximumFractionDigits:0})}</td>
+          <td><div class="cp-bar-bg"><div class="cp-bar-fill" style="width:${(v/maxProd*100).toFixed(0)}%"></div></div></td></tr>`).join('') || '<tr><td colspan="3" style="color:var(--text-dim)">Nenhum produto marcado com essa marca comprado no período (ou nenhum produto marcado ainda — use "Marcar produtos").</td></tr>'}
+          </tbody>
+        </table>
+        </div>
+      </div>
+    `;
+   }catch(err){
+     el.innerHTML = '<div class="cp-soon"><b>Não consegui carregar esta aba</b>Tente trocar de aba e voltar. Detalhe: '+(err && err.message ? err.message : 'erro desconhecido')+'</div>';
+   }
+  }
+
+  async function renderAuditoria(el){
+   try{
+    if(filters.clientes.length!==1){
+      el.innerHTML = `<div class="cp-soon"><b>Relatório de Auditoria</b>Selecione exatamente 1 cliente no filtro "Cliente/Loja" acima para gerar o relatório completo (Curva ABC, saúde do estoque e comparação com pares da região e da faixa de volume).</div>`;
+      return;
+    }
+    const tags = await loadProductTags();
+    const cod = filters.clientes[0];
+    const c = CLIENTS.find(x=>x.codigo===cod);
+    const HOJE = new Date();
+    const data = getFiltered().filter(r=>r.codigo===cod);
+    const volumeCliente = data.reduce((s,r)=>s+r.quant,0);
+
+    // Curva ABC do cliente (exclui produtos marcados como "Ausentes")
+    const prodAusenteAud = new Set(Object.keys(tags).filter(p=> (tags[p]||[]).includes('Ausentes')));
+    const dataABC = data.filter(r=> !prodAusenteAud.has(r.prod));
+    const volumeClienteABC = dataABC.reduce((s,r)=>s+r.quant,0);
+    const prodTotals = {};
+    dataABC.forEach(r=>{ prodTotals[r.desc]=(prodTotals[r.desc]||0)+r.quant; });
+    const listaProd = Object.entries(prodTotals).sort((a,b)=>b[1]-a[1]);
+    let acumulado=0;
+    const classificados = listaProd.map(([d,v])=>{
+      acumulado+=v;
+      const pctAcum = volumeClienteABC? acumulado/volumeClienteABC*100 : 0;
+      const classe = pctAcum<=80?'A':(pctAcum<=95?'B':'C');
+      return {desc:d, v, classe};
+    });
+    const resumoClasse = {A:{n:0,vol:0}, B:{n:0,vol:0}, C:{n:0,vol:0}};
+    classificados.forEach(p=>{ resumoClasse[p.classe].n++; resumoClasse[p.classe].vol+=p.v; });
+
+    // Concentração de risco
+    const topProduto = listaProd[0];
+    const concentracaoPct = (topProduto && volumeCliente) ? (topProduto[1]/volumeCliente*100) : 0;
+
+    // Sazonalidade (ano atual vs ano anterior, histórico completo do cliente)
+    const {limiteAtual: limiteAtualAud, limiteAnterior: limiteAnteriorAud, ultimoMes: ultimoMesAud} = limitesComparacaoAnual();
+    const volCurAno = RAW.filter(r=>r.codigo===cod && r.ano===anoAtual && r.data<=limiteAtualAud).reduce((s,r)=>s+r.quant,0);
+    const volPrevAno = RAW.filter(r=>r.codigo===cod && r.ano===anoAnterior && r.data<=limiteAnteriorAud).reduce((s,r)=>s+r.quant,0);
+    const deltaAno = volPrevAno>0 ? ((volCurAno-volPrevAno)/volPrevAno*100) : null;
+
+    // Saúde do estoque do cliente (histórico completo, 48 meses)
+    const cutoff48 = new Date(HOJE.getTime()-48*30*86400000);
+    const porProdutoHist = {};
+    RAW.filter(r=>r.codigo===cod && r.data>=cutoff48 && !prodAusenteAud.has(r.prod)).forEach(r=>{
+      if(!porProdutoHist[r.prod]) porProdutoHist[r.prod] = {desc:r.desc, datas:new Set()};
+      porProdutoHist[r.prod].datas.add(r.data.toDateString());
+    });
+    const alertasEstoque = [];
+    Object.values(porProdutoHist).forEach(pd=>{
+      const datasU = Array.from(pd.datas).map(s=>new Date(s)).sort((a,b)=>a-b);
+      if(datasU.length<2) return;
+      let totalGap=0;
+      for(let i=1;i<datasU.length;i++) totalGap += (datasU[i]-datasU[i-1])/86400000;
+      const avgGap = totalGap/(datasU.length-1);
+      const lastDate = datasU[datasU.length-1];
+      const diasDesde = Math.round((HOJE-lastDate)/86400000);
+      if(diasDesde>60 && diasDesde>avgGap) alertasEstoque.push({desc:pd.desc, diasDesde, avgGap:Math.round(avgGap)});
+    });
+    alertasEstoque.sort((a,b)=>(b.diasDesde-b.avgGap)-(a.diasDesde-a.avgGap));
+
+    // Benchmarking por área
+    const areaCliente = CLIENT_AREA[cod];
+    let regiaoStats = null;
+    if(areaCliente!=null){
+      const paresArea = CLIENTS.filter(x=>x.codigo!==cod && CLIENT_AREA[x.codigo]===areaCliente);
+      const volPares = paresArea.map(x=> getFiltered().filter(r=>r.codigo===x.codigo).reduce((s,r)=>s+r.quant,0));
+      const mediaVolArea = volPares.length? volPares.reduce((a,b)=>a+b,0)/volPares.length : null;
+      const catCliente = new Set(data.map(r=>categorizarProduto(r.desc))).size;
+      const catPares = paresArea.map(x=> new Set(getFiltered().filter(r=>r.codigo===x.codigo).map(r=>categorizarProduto(r.desc))).size);
+      const mediaCatArea = catPares.length? catPares.reduce((a,b)=>a+b,0)/catPares.length : null;
+      regiaoStats = { areaCliente, label: AREA_LABELS[areaCliente]||'', nPares: paresArea.length, mediaVolArea, catCliente, mediaCatArea };
+    }
+
+    // Benchmarking por faixa de volume (tercis entre clientes ativos no período)
+    const todosAtivos = Array.from(new Set(getFiltered().map(r=>r.codigo)));
+    const volPorCliente = todosAtivos.map(cd2=>({codigo:cd2, vol: getFiltered().filter(r=>r.codigo===cd2).reduce((s,r)=>s+r.quant,0)}));
+    volPorCliente.sort((a,b)=>b.vol-a.vol);
+    const nTot = volPorCliente.length;
+    const corte1 = Math.ceil(nTot/3), corte2 = Math.ceil(2*nTot/3);
+    let faixaCliente = '—', indexCliente=-1;
+    volPorCliente.forEach((v,i)=>{ if(v.codigo===cod) indexCliente=i; });
+    if(indexCliente>=0) faixaCliente = indexCliente<corte1? 'Alto volume' : (indexCliente<corte2? 'Médio volume':'Baixo volume');
+    const faixaMembros = volPorCliente.filter((v,i)=>{
+      const f = i<corte1?'Alto volume':(i<corte2?'Médio volume':'Baixo volume');
+      return f===faixaCliente && v.codigo!==cod;
+    });
+    const mediaFaixa = faixaMembros.length? faixaMembros.reduce((s,v)=>s+v.vol,0)/faixaMembros.length : null;
+
+    // Classificação de risco automática
+    const riscos = [];
+    if(concentracaoPct>40) riscos.push({achado:'Concentração em 1 produto ('+concentracaoPct.toFixed(0)+'% do volume do cliente)', risco:'Alto'});
+    if(alertasEstoque.length>0) riscos.push({achado: alertasEstoque.length+' produto(s) com sinal de ruptura de reposição (parado(s) além do padrão histórico)', risco: alertasEstoque.length>3?'Alto':'Médio'});
+    if(deltaAno!=null && deltaAno<-20) riscos.push({achado:'Queda de volume de '+Math.abs(deltaAno).toFixed(0)+'% vs. '+anoAnterior+' (mesmo período)', risco:'Alto'});
+    if(regiaoStats && regiaoStats.mediaVolArea && volumeCliente < regiaoStats.mediaVolArea*0.7) riscos.push({achado:'Volume abaixo da média da região (Área '+areaCliente+')', risco:'Médio'});
+    if(riscos.length===0) riscos.push({achado:'Nenhum risco relevante identificado no recorte analisado', risco:'Baixo'});
+    const corRisco = {Alto:'var(--neg)', Médio:'var(--accent)', Baixo:'var(--pos)'};
+
+    // Sugestões de produtos Master (até 5)
+    const prodDescMap = {};
+    RAW.forEach(r=>{ if(!(r.prod in prodDescMap)) prodDescMap[r.prod]=r.desc; });
+    const masterProds = Object.keys(prodDescMap).filter(p=> (tags[p]||[]).includes('Master'));
+    const volPorProdGeral = {};
+    RAW.forEach(r=>{ volPorProdGeral[r.prod] = (volPorProdGeral[r.prod]||0)+r.quant; });
+
+    const historicoClienteTodo = RAW.filter(r=>r.codigo===cod);
+    const prodsJaCompradosCliente = new Set(historicoClienteTodo.map(r=>r.prod));
+    const catsCliente = new Set(historicoClienteTodo.map(r=>categorizarProduto(r.desc)));
+
+    let sugestoesMaster = [];
+    let origemSugestao = '';
+    if(historicoClienteTodo.length===0){
+      // sem histórico algum: sugere Master mais vendidos na região do cliente
+      origemSugestao = 'baseado nos produtos Master mais vendidos na região deste cliente';
+      const areaCli = CLIENT_AREA[cod];
+      const codigosRegiao = new Set(CLIENTS.filter(x=>CLIENT_AREA[x.codigo]===areaCli).map(x=>x.codigo));
+      const volRegiaoPorProd = {};
+      RAW.forEach(r=>{ if(codigosRegiao.has(r.codigo) && masterProds.includes(r.prod)) volRegiaoPorProd[r.prod]=(volRegiaoPorProd[r.prod]||0)+r.quant; });
+      sugestoesMaster = Object.entries(volRegiaoPorProd).sort((a,b)=>b[1]-a[1]).slice(0,5).map(([p,v])=>({prod:p, desc:prodDescMap[p], vol:v}));
+    } else {
+      // relaciona por categoria já comprada pelo cliente, excluindo o que ele já compra
+      origemSugestao = 'baseado nas linhas de produto que este cliente já compra';
+      const candidatos = masterProds.filter(p=> !prodsJaCompradosCliente.has(p) && catsCliente.has(categorizarProduto(prodDescMap[p])));
+      let ranked = candidatos.sort((a,b)=>(volPorProdGeral[b]||0)-(volPorProdGeral[a]||0)).slice(0,5).map(p=>({prod:p, desc:prodDescMap[p], vol:volPorProdGeral[p]||0}));
+      if(ranked.length<5){
+        const jaSugeridos = new Set(ranked.map(r=>r.prod));
+        const extras = masterProds.filter(p=> !prodsJaCompradosCliente.has(p) && !jaSugeridos.has(p))
+          .sort((a,b)=>(volPorProdGeral[b]||0)-(volPorProdGeral[a]||0)).slice(0,5-ranked.length)
+          .map(p=>({prod:p, desc:prodDescMap[p], vol:volPorProdGeral[p]||0}));
+        ranked = ranked.concat(extras);
+      }
+      if(ranked.length===0 && masterProds.length>0){
+        // o cliente já compra todos os Master cadastrados (ou não há Master fora do que ele já leva) — mostra os mais vendidos mesmo assim
+        origemSugestao = 'produtos Master mais vendidos no geral (o cliente já compra a maior parte dos cadastrados)';
+        ranked = masterProds.slice().sort((a,b)=>(volPorProdGeral[b]||0)-(volPorProdGeral[a]||0)).slice(0,5)
+          .map(p=>({prod:p, desc:prodDescMap[p], vol:volPorProdGeral[p]||0}));
+      }
+      sugestoesMaster = ranked;
+    }
+
+    const mesesTexto = filters.meses.length? filters.meses.map(m=>MES_NOMES[m-1]).join(', ') : 'todos os meses com dado (até '+MES_NOMES[ultimoMesAud-1]+')';
+    const municipioCliente = CLIENT_CIDADE[cod] || 'não identificado';
+
+    el.innerHTML = `
+      <div class="cp-section-title cp-noprint"><span class="dash"></span>Relatório de Auditoria · ${c?c.nome:cod}</div>
+      <div class="cp-sub cp-noprint">Código ${cod} · ${periodLabel()} · gerado em ${HOJE.toLocaleDateString('pt-BR')}</div>
+
+      <div class="cp-panel" id="cp-print-area">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
+          <div class="cp-section-title" style="margin:0;"><span class="dash"></span>1. Sumário executivo</div>
+          <button onclick="window.print()" class="cp-noprint" style="background:var(--steel); color:#fff; border:none; border-radius:7px; font-size:10px; font-weight:700; padding:6px 10px; cursor:pointer;">Exportar PDF</button>
+        </div>
+        <div class="cp-sub" style="margin:0 0 10px 0;"><b>${c?c.nome:cod}</b> · Período analisado: Ano ${anoAtual} · ${mesesTexto} · Município: ${municipioCliente}</div>
+        <div class="cp-kpi-grid">
+          <div class="cp-kpi"><span class="lbl">Volume no período</span><span class="val">${fmtL(volumeCliente)}</span></div>
+          <div class="cp-kpi"><span class="lbl">Vs. ${anoAnterior} (mesmo período)</span><span class="val" style="color:${deltaAno==null?'var(--text)':(deltaAno>=0?'var(--pos)':'var(--neg)')};">${deltaAno!=null? (deltaAno>=0?'+':'')+deltaAno.toFixed(1)+'%' : '—'}</span></div>
+          <div class="cp-kpi"><span class="lbl">Faixa de volume</span><span class="val" style="font-size:14px;">${faixaCliente}</span></div>
+          <div class="cp-kpi"><span class="lbl">Alertas de estoque</span><span class="val" style="color:${alertasEstoque.length?'var(--neg)':'var(--pos)'};">${alertasEstoque.length}</span></div>
+        </div>
+
+        <div class="cp-section-title"><span class="dash"></span>2. Curva ABC do cliente</div>
+        <table class="cp-table">
+          <thead><tr><th>Classe</th><th style="width:80px">Nº produtos</th><th style="width:80px">% do volume</th></tr></thead>
+          <tbody>
+          ${['A','B','C'].map(cl=>`<tr><td class="name" style="color:${corRisco[cl==='A'?'Baixo':cl==='B'?'Médio':'Alto']};font-weight:700;">${cl}</td><td>${resumoClasse[cl].n}</td><td>${volumeClienteABC? (resumoClasse[cl].vol/volumeClienteABC*100).toFixed(1):'0'}%</td></tr>`).join('')}
+          </tbody>
+        </table>
+        <div class="cp-sub" style="margin-top:8px;">Top ${Math.min(15,classificados.length)} produtos deste cliente no período:</div>
+        <table class="cp-table">
+          <thead><tr><th>Produto</th><th style="width:70px">Litros</th><th style="width:40px">Classe</th></tr></thead>
+          <tbody>
+          ${classificados.slice(0,15).map(p=>`<tr><td class="name">${p.desc.slice(0,40)}</td><td>${p.v.toLocaleString('pt-BR',{maximumFractionDigits:0})}</td><td style="color:${corRisco[p.classe==='A'?'Baixo':p.classe==='B'?'Médio':'Alto']};font-weight:700;">${p.classe}</td></tr>`).join('') || '<tr><td colspan="3" style="color:var(--text-dim)">Sem produtos no período.</td></tr>'}
+          </tbody>
+        </table>
+
+        <div class="cp-section-title"><span class="dash"></span>3. Saúde do estoque</div>
+        ${alertasEstoque.length? `
+        <table class="cp-table">
+          <thead><tr><th>Produto</th><th style="width:70px">Dias sem</th><th style="width:80px">Intervalo médio</th></tr></thead>
+          <tbody>
+          ${alertasEstoque.slice(0,15).map(a=>`<tr><td class="name">${a.desc.slice(0,40)}</td><td style="color:var(--neg);">${a.diasDesde}d</td><td>${a.avgGap}d</td></tr>`).join('')}
+          </tbody>
+        </table>` : `<div class="cp-sub">Nenhum produto com sinal de ruptura de reposição identificado.</div>`}
+
+        <div class="cp-section-title"><span class="dash"></span>4. Posicionamento relativo (benchmarking)</div>
+        <div class="cp-sub">4.1 Comparação por área/região${regiaoStats? ' — Área '+areaCliente+' ('+regiaoStats.label+'), '+regiaoStats.nPares+' cliente(s) de referência' : ''}</div>
+        ${regiaoStats ? `
+        <table class="cp-table">
+          <thead><tr><th>Indicador</th><th>Cliente</th><th>Média da região</th></tr></thead>
+          <tbody>
+            <tr><td class="name">Volume no período</td><td>${fmtL(volumeCliente)}</td><td>${regiaoStats.mediaVolArea!=null? fmtL(regiaoStats.mediaVolArea):'—'}</td></tr>
+            <tr><td class="name">Categorias distintas compradas</td><td>${regiaoStats.catCliente}</td><td>${regiaoStats.mediaCatArea!=null? regiaoStats.mediaCatArea.toFixed(1):'—'}</td></tr>
+          </tbody>
+        </table>` : `<div class="cp-sub">Área não identificada para este cliente.</div>`}
+
+        <div class="cp-sub" style="margin-top:10px;">4.2 Comparação por faixa de volume — grupo "${faixaCliente}" (${faixaMembros.length} cliente(s) de referência)</div>
+        <table class="cp-table">
+          <thead><tr><th>Indicador</th><th>Cliente</th><th>Média da faixa</th></tr></thead>
+          <tbody>
+            <tr><td class="name">Volume no período</td><td>${fmtL(volumeCliente)}</td><td>${mediaFaixa!=null? fmtL(mediaFaixa):'—'}</td></tr>
+          </tbody>
+        </table>
+
+        <div class="cp-section-title"><span class="dash"></span>5. Classificação de risco</div>
+        <table class="cp-table">
+          <thead><tr><th>Achado</th><th style="width:70px">Risco</th></tr></thead>
+          <tbody>
+          ${riscos.map(r=>`<tr><td class="name">${r.achado}</td><td style="color:${corRisco[r.risco]}; font-weight:700;">${r.risco}</td></tr>`).join('')}
+          </tbody>
+        </table>
+        ${alertasEstoque.length>0 ? `
+        <div class="cp-sub" style="margin:10px 0 6px 0;"><b>Produtos do achado de ruptura de reposição (${alertasEstoque.length}):</b></div>
+        <table class="cp-table">
+          <thead><tr><th>Produto</th><th style="width:70px">Dias sem</th><th style="width:80px">Intervalo médio</th></tr></thead>
+          <tbody>
+          ${alertasEstoque.map(a=>`<tr><td class="name">${a.desc}</td><td style="color:var(--neg);">${a.diasDesde}d</td><td>${a.avgGap}d</td></tr>`).join('')}
+          </tbody>
+        </table>` : ''}
+
+        <div class="cp-section-title"><span class="dash"></span>6. Recomendações</div>
+        <div style="font-size:11px; line-height:1.6;">
+          ${concentracaoPct>40? `<div>• Diversificar o mix — hoje ${concentracaoPct.toFixed(0)}% do volume depende de 1 produto só (${topProduto?topProduto[0].slice(0,40):''}).</div>`:''}
+          ${alertasEstoque.length? `<div>• Contatar o cliente sobre os ${alertasEstoque.length} produto(s) parado(s) na seção 3 — podem indicar ruptura de reposição ou troca de fornecedor.</div>`:''}
+          ${deltaAno!=null && deltaAno<-20 ? `<div>• Investigar a queda de ${Math.abs(deltaAno).toFixed(0)}% no volume vs. ${anoAnterior} (mesmo período do ano, até ${MES_NOMES[ultimoMesAud-1]}) antes que o afastamento se agrave.</div>`:''}
+          ${regiaoStats && regiaoStats.mediaVolArea && volumeCliente<regiaoStats.mediaVolArea*0.7 ? `<div>• Cliente compra abaixo da média da região — avaliar oportunidade de aumento de mix/ticket.</div>`:''}
+          ${(concentracaoPct<=40 && !alertasEstoque.length && !(deltaAno!=null&&deltaAno<-20)) ? '<div>• Manter o acompanhamento de rotina — nenhum ponto crítico identificado neste recorte.</div>':''}
+        </div>
+
+        <div class="cp-section-title"><span class="dash"></span>7. Sugestões de produtos Master</div>
+        <div class="cp-sub">${masterProds.length} produto(s) marcado(s) como Master no total. ${sugestoesMaster.length? 'Até 5 sugeridos, '+origemSugestao+':' : 'Nenhuma sugestão possível pra este cliente com os Master cadastrados até agora.'}</div>
+        ${sugestoesMaster.length? `
+        <table class="cp-table">
+          <thead><tr><th>Produto</th><th style="width:90px">Volume vendido (referência)</th></tr></thead>
+          <tbody>
+          ${sugestoesMaster.map(s=>`<tr><td class="name">${(s.desc||s.prod).slice(0,44)}</td><td>${s.vol.toLocaleString('pt-BR',{maximumFractionDigits:0})} L</td></tr>`).join('')}
+          </tbody>
+        </table>` : ''}
+      </div>
+    `;
+   }catch(err){
+     el.innerHTML = '<div class="cp-soon"><b>Não consegui gerar o relatório</b>Detalhe: '+(err && err.message ? err.message : 'erro desconhecido')+'</div>';
+   }
+  }
+
+  function renderProdutoConsulta(el){
+    if(filters.produtos.length!==1){
+      el.innerHTML = `<div class="cp-soon"><b>Consultar produto</b>Busque e selecione 1 produto no filtro "Produto" acima (aparece só nesta aba) pra ver a análise dele — respeitando também Período, Mês, Área e Cliente.</div>`;
+      return;
+    }
+    const prod = filters.produtos[0];
+    const prodDescMap = {};
+    RAW.forEach(r=>{ if(!(r.prod in prodDescMap)) prodDescMap[r.prod]=r.desc; });
+    const desc = prodDescMap[prod] || prod;
+
+    const data = getFiltered().filter(r=>r.prod===prod);
+    const volumeProduto = data.reduce((s,r)=>s+r.quant,0);
+    const notasSet = new Set(data.map(r=> r.nota!=null?('n:'+r.nota):('d:'+r.codigo+r.data.toDateString())));
+
+    let delta = null;
+    if(filters.period==='atual'){
+      const semMesFiltro = filters.meses.length===0;
+      const {limiteAtual, limiteAnterior} = limitesComparacaoAnual();
+      const curComparavel = RAW.filter(r=>r.prod===prod && r.ano===anoAtual && (!filters.meses.length||filters.meses.includes(r.mes)) && (!semMesFiltro || r.data<=limiteAtual));
+      const prev = RAW.filter(r=>r.prod===prod && r.ano===anoAnterior && (!filters.meses.length||filters.meses.includes(r.mes)) && (!semMesFiltro || r.data<=limiteAnterior));
+      const litCurComparavel = curComparavel.reduce((s,r)=>s+r.quant,0);
+      const litPrev = prev.reduce((s,r)=>s+r.quant,0);
+      delta = litPrev>0 ? ((litCurComparavel-litPrev)/litPrev*100) : null;
+    }
+
+    const todasLinhasProd = RAW.filter(r=>r.prod===prod);
+    const lastDate = todasLinhasProd.length? new Date(Math.max(...todasLinhasProd.map(r=>r.data.getTime()))) : null;
+
+    const porCliente = {};
+    data.forEach(r=>{
+      if(!porCliente[r.codigo]) porCliente[r.codigo] = {vol:0, lastDate:r.data};
+      porCliente[r.codigo].vol += r.quant;
+      if(r.data>porCliente[r.codigo].lastDate) porCliente[r.codigo].lastDate = r.data;
+    });
+    const listaClientes = Object.entries(porCliente).map(([cod,info])=>{
+      const c = CLIENTS.find(x=>x.codigo===cod);
+      return {codigo:cod, nome:c?c.nome:cod, vol:info.vol, lastDate:info.lastDate};
+    }).sort((a,b)=>b.vol-a.vol);
+    const maxCli = listaClientes.length? listaClientes[0].vol : 1;
+
+    el.innerHTML = `
+      <div class="cp-section-title"><span class="dash"></span>${desc}</div>
+      <div class="cp-sub mono">Código ${prod} · ${periodLabel()}</div>
+      <div class="cp-kpi-grid">
+        <div class="cp-kpi"><span class="lbl">Volume no período</span><span class="val">${fmtL(volumeProduto)}</span>
+          ${delta!=null? `<span class="delta ${delta>=0?'pos':'neg'}">${delta>=0?'+':''}${delta.toFixed(1)}% vs ${anoAnterior} (mesmo período)</span>` : (filters.period==='atual' ? '<span class="delta" style="color:var(--text-dim);">sem dado comparável</span>' : '')}
+        </div>
+        <div class="cp-kpi"><span class="lbl">Nº de notas</span><span class="val">${notasSet.size}</span></div>
+        <div class="cp-kpi"><span class="lbl">Clientes que compraram</span><span class="val">${listaClientes.length}</span></div>
+        <div class="cp-kpi"><span class="lbl">Última venda (histórico)</span><span class="val" style="font-size:13px;">${lastDate? lastDate.toLocaleDateString('pt-BR') : '—'}</span></div>
+      </div>
+      <div class="cp-panel">
+        <div class="cp-section-title" style="margin-top:0;"><span class="dash"></span>Clientes que compraram este produto no período</div>
+        <div style="max-height:480px; overflow-y:auto;">
+        <table class="cp-table">
+          <thead><tr><th>Cliente</th><th style="width:75px">Litros</th><th style="width:80px">Última compra</th><th style="width:90px"></th></tr></thead>
+          <tbody>
+          ${listaClientes.map(cl=>`<tr><td class="name">${cl.nome}</td><td>${cl.vol.toLocaleString('pt-BR',{maximumFractionDigits:0})}</td><td>${cl.lastDate.toLocaleDateString('pt-BR')}</td>
+          <td><div class="cp-bar-bg"><div class="cp-bar-fill" style="width:${(cl.vol/maxCli*100).toFixed(0)}%"></div></div></td></tr>`).join('') || '<tr><td colspan="4" style="color:var(--text-dim)">Nenhum cliente comprou este produto no recorte selecionado.</td></tr>'}
+          </tbody>
+        </table>
+        </div>
+      </div>
+    `;
+  }
+
+  function renderGerencial(el){
+    const data = getFiltered();
+    const litCur = data.reduce((s,r)=>s+r.quant,0);
+
+    let deltaLit = null, clientesPrev = null;
+    {
+      const semMesFiltro = filters.meses.length===0;
+      const {limiteAtual, limiteAnterior} = limitesComparacaoAnual();
+      const curComparavel = RAW.filter(r=> r.ano===anoAtual && (!filters.meses.length||filters.meses.includes(r.mes)) && (!filters.clientes.length||filters.clientes.includes(r.codigo)) && (!semMesFiltro || r.data<=limiteAtual));
+      const prev = RAW.filter(r=> r.ano===anoAnterior && (!filters.meses.length||filters.meses.includes(r.mes)) && (!filters.clientes.length||filters.clientes.includes(r.codigo)) && (!semMesFiltro || r.data<=limiteAnterior));
+      const litCurComparavel = curComparavel.reduce((s,r)=>s+r.quant,0);
+      const litPrev = prev.reduce((s,r)=>s+r.quant,0);
+      deltaLit = litPrev>0 ? ((litCurComparavel-litPrev)/litPrev*100) : null;
+      clientesPrev = new Set(prev.map(r=>r.codigo)).size;
+    }
+
+    const clientesCur = new Set(data.map(r=>r.codigo)).size;
+    const totalClientesCarteira = CLIENTS.length;
+
+    const pedidosCur = new Set(data.map(r=>r.codigo+'|'+r.data.toISOString().slice(0,10))).size;
+
+    // por mes (do período em foco)
+    const monthsToShow = filters.period==='anterior' ? [anoAnterior] : (filters.period==='ambos' ? [anoAnterior,anoAtual] : [anoAtual]);
+    const byMonth = {};
+    monthsToShow.forEach(y=>{ byMonth[y]=Array(12).fill(0); });
+    RAW.forEach(r=>{
+      if(!monthsToShow.includes(r.ano)) return;
+      if(filters.meses.length && !filters.meses.includes(r.mes)) return;
+      if(filters.clientes.length && !filters.clientes.includes(r.codigo)) return;
+      byMonth[r.ano][r.mes-1]+=r.quant;
+    });
+
+    // top clientes
+    const clientTotals = {};
+    data.forEach(r=>{ clientTotals[r.codigo]=(clientTotals[r.codigo]||0)+r.quant; });
+    const topClients = Object.entries(clientTotals).sort((a,b)=>b[1]-a[1]).slice(0,8);
+    const maxTop = topClients.length? topClients[0][1] : 1;
+
+    el.innerHTML = `
+      <div class="cp-section-title"><span class="dash"></span>Visão gerencial · ${periodLabel()}</div>
+      <div class="cp-sub">Carteira com ${totalClientesCarteira} clientes cadastrados na base.</div>
+      <div class="cp-kpi-grid">
+        <div class="cp-kpi"><span class="lbl">Volume vendido</span><span class="val">${fmtL(litCur)}</span>
+          ${deltaLit!=null? `<span class="delta ${deltaLit>=0?'pos':'neg'}">${deltaLit>=0?'+':''}${deltaLit.toFixed(1)}% vs ${anoAnterior} (mesmo período)</span>` : '<span class="delta" style="color:var(--text-dim);">sem dado comparável em '+anoAnterior+' no mesmo período</span>'}
+        </div>
+        <div class="cp-kpi"><span class="lbl">Clientes ativos</span><span class="val">${clientesCur}</span>
+          <span class="delta ${clientesPrev==null || clientesCur>=clientesPrev?'pos':'neg'}">${clientesPrev!=null? (clientesCur-clientesPrev>=0?'+':'')+(clientesCur-clientesPrev)+' vs '+anoAnterior : ''}</span>
+        </div>
+        <div class="cp-kpi"><span class="lbl">Pedidos (dia×cliente)</span><span class="val">${pedidosCur}</span></div>
+      </div>
+
+      <div class="cp-panel">
+        <div class="cp-section-title" style="margin-top:0;"><span class="dash"></span>Volume por mês (litros)</div>
+        <div class="cp-chart-wrap"><canvas id="cp-chart-mes" height="140"></canvas></div>
+      </div>
+
+      <div class="cp-panel">
+        <div class="cp-section-title" style="margin-top:0;"><span class="dash"></span>Top clientes no período (litros)</div>
+        <table class="cp-table">
+          <thead><tr><th>Cliente</th><th style="width:90px">Litros</th><th style="width:120px"></th></tr></thead>
+          <tbody>
+            ${topClients.map(([cod,v])=>{
+              const c = CLIENTS.find(x=>x.codigo===cod);
+              return `<tr><td class="name">${c?c.nome.slice(0,32):cod}</td><td>${v.toLocaleString('pt-BR',{maximumFractionDigits:0})}</td>
+              <td><div class="cp-bar-bg"><div class="cp-bar-fill" style="width:${(v/maxTop*100).toFixed(0)}%"></div></div></td></tr>`;
+            }).join('')}
+          </tbody>
+        </table>
+      </div>
+    `;
+
+    const ctx = $('#cp-chart-mes').getContext('2d');
+    const nomesMes = ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'];
+    const datasets = Object.entries(byMonth).map(([y,arr],i)=>({
+      label:String(y), data:arr, backgroundColor: i===0? 'rgba(76,122,150,.75)':'rgba(232,135,30,.85)', borderRadius:4
+    }));
+    if(window.cpChart) window.cpChart.destroy();
+    window.cpChart = new Chart(ctx,{
+      type:'bar',
+      data:{labels:nomesMes, datasets},
+      options:{
+        responsive:true,
+        plugins:{legend:{labels:{color:'#9299A6', font:{size:9}}}},
+        scales:{
+          x:{ticks:{color:'#9299A6', font:{size:9}}, grid:{color:'#2A2F38'}},
+          y:{ticks:{color:'#9299A6', font:{size:9}}, grid:{color:'#2A2F38'}}
+        }
+      }
+    });
+  }
+
+  function renderCliente(el){
+    if(filters.clientes.length!==1){
+      el.innerHTML = `<div class="cp-soon"><b>Visão cliente</b>Selecione exatamente 1 cliente no filtro acima para ver o detalhe individual (histórico, produtos comprados e comparativo com o período anterior).</div>`;
+      return;
+    }
+    const cod = filters.clientes[0];
+    const c = CLIENTS.find(x=>x.codigo===cod);
+    const cur = getFiltered().filter(r=>r.codigo===cod);
+    const litCur = cur.reduce((s,r)=>s+r.quant,0);
+    let delta = null;
+    {
+      const semMesFiltro = filters.meses.length===0;
+      const {limiteAtual, limiteAnterior} = limitesComparacaoAnual();
+      const curComparavel = RAW.filter(r=>r.codigo===cod && r.ano===anoAtual && (!filters.meses.length||filters.meses.includes(r.mes)) && (!semMesFiltro || r.data<=limiteAtual));
+      const prev = RAW.filter(r=>r.codigo===cod && r.ano===anoAnterior && (!filters.meses.length||filters.meses.includes(r.mes)) && (!semMesFiltro || r.data<=limiteAnterior));
+      const litCurComparavel = curComparavel.reduce((s,r)=>s+r.quant,0);
+      const litPrev = prev.reduce((s,r)=>s+r.quant,0);
+      delta = litPrev>0 ? ((litCurComparavel-litPrev)/litPrev*100) : null;
+    }
+
+    const allForClient = RAW.filter(r=>r.codigo===cod);
+    const lastPurchase = allForClient.reduce((max,r)=> r.data>max? r.data : max, new Date(0));
+    const diasDesde = Math.round((new Date() - lastPurchase)/86400000);
+
+    const isAmbos = filters.period==='ambos';
+    let topProd, maxProd, prodAtualMap={}, prodAnteriorMap={};
+    if(isAmbos){
+      cur.forEach(r=>{
+        if(r.ano===anoAtual) prodAtualMap[r.desc]=(prodAtualMap[r.desc]||0)+r.quant;
+        else if(r.ano===anoAnterior) prodAnteriorMap[r.desc]=(prodAnteriorMap[r.desc]||0)+r.quant;
+      });
+      const allDescs = new Set([...Object.keys(prodAtualMap), ...Object.keys(prodAnteriorMap)]);
+      topProd = Array.from(allDescs).map(d=>[d, (prodAtualMap[d]||0)+(prodAnteriorMap[d]||0)])
+        .sort((a,b)=>b[1]-a[1]);
+      maxProd = topProd.length? Math.max(...topProd.map(([d])=>Math.max(prodAtualMap[d]||0, prodAnteriorMap[d]||0))) : 1;
+    } else {
+      const prodTotals = {};
+      cur.forEach(r=>{ prodTotals[r.desc]=(prodTotals[r.desc]||0)+r.quant; });
+      topProd = Object.entries(prodTotals).sort((a,b)=>b[1]-a[1]);
+      maxProd = topProd.length? topProd[0][1]:1;
+    }
+
+    el.innerHTML = `
+      <div class="cp-section-title"><span class="dash"></span>${c?c.nome:cod}</div>
+      <div class="cp-sub mono">Código ${cod} · ${periodLabel()}${CLIENT_AREA[cod]!=null? ' · Área '+CLIENT_AREA[cod]+' ('+(AREA_LABELS[CLIENT_AREA[cod]]||'')+')' : ''}</div>
+      <div class="cp-kpi-grid">
+        <div class="cp-kpi"><span class="lbl">Volume no período</span><span class="val">${fmtL(litCur)}</span>
+          ${delta!=null? `<span class="delta ${delta>=0?'pos':'neg'}">${delta>=0?'+':''}${delta.toFixed(1)}% vs ${anoAnterior} (mesmo período)</span>` : '<span class="delta" style="color:var(--text-dim);">sem dado comparável em '+anoAnterior+' no mesmo período</span>'}
+        </div>
+        <div class="cp-kpi"><span class="lbl">Última compra</span><span class="val" style="font-size:13px;">${lastPurchase.toLocaleDateString('pt-BR')}</span>
+          <span class="delta ${diasDesde>60?'neg':'pos'}">${diasDesde} dias atrás</span>
+        </div>
+        <div class="cp-kpi"><span class="lbl">Compras 12 meses</span><span class="val">${(()=>{ const recentes = allForClient.filter(r=> (new Date()-r.data)/86400000<=365); const notas = new Set(recentes.map(r=> r.nota!=null? ('n:'+r.nota) : ('d:'+r.data.toDateString()))); return notas.size; })()}</span></div>
+      </div>
+      ${litCur===0 && allForClient.length>0 ? `<div class="cp-panel" style="border-color:var(--neg); background:rgba(201,99,75,.08);">
+        <div style="font-size:10px; color:var(--text);"><b style="color:var(--neg);">Sem compras no recorte filtrado</b> (${periodLabel()}${filters.meses.length? ' · '+filters.meses.map(m=>MES_NOMES[m-1]).join(', ') : ''}), mas o cliente tem histórico: última compra em <b>${lastPurchase.toLocaleDateString('pt-BR')}</b> (${diasDesde} dias atrás). Isso normalmente indica que ele não comprou exatamente nesse mês/ano — não é um erro de dados. Se ele costuma ser assíduo, vale olhar como alerta de possível afastamento.</div>
+      </div>` : ''}
+      <div class="cp-panel">
+        <div class="cp-section-title" style="margin-top:0;"><span class="dash"></span>Produtos comprados no período <span style="color:var(--text-dim); font-weight:400;">(${topProd.length})</span></div>
+        <div style="max-height:340px; overflow-y:auto;">
+        <table class="cp-table">
+          <thead><tr><th>Produto</th>${isAmbos? `<th style="width:80px">Atual (${anoAtual})</th><th style="width:80px">Anterior (${anoAnterior})</th>` : `<th style="width:80px">Litros</th><th style="width:110px"></th>`}</tr></thead>
+          <tbody>
+          ${isAmbos ?
+            (topProd.map(([d])=>`<tr><td class="name">${d.slice(0,34)}</td><td>${(prodAtualMap[d]||0).toLocaleString('pt-BR',{maximumFractionDigits:0})}</td><td>${(prodAnteriorMap[d]||0).toLocaleString('pt-BR',{maximumFractionDigits:0})}</td></tr>`).join('') || '<tr><td colspan="3" style="color:var(--text-dim)">Sem compras no período selecionado.</td></tr>')
+            :
+            (topProd.map(([d,v])=>`<tr><td class="name">${d.slice(0,38)}</td><td>${v.toLocaleString('pt-BR',{maximumFractionDigits:0})}</td>
+          <td><div class="cp-bar-bg"><div class="cp-bar-fill" style="width:${(v/maxProd*100).toFixed(0)}%"></div></div></td></tr>`).join('') || '<tr><td colspan="3" style="color:var(--text-dim)">Sem compras no período selecionado.</td></tr>')
+          }
+          </tbody>
+        </table>
+        </div>
+      </div>
+    `;
+  }
+
+  $('#cp-file').addEventListener('change', (e)=>{ if(e.target.files[0]) handleFile(e.target.files[0]); });
+  inicializaToggleFiltros();
+  atualizaColapsoFiltros();
+
+  function atualizaIndicadorPin(){
+    const el = document.getElementById('cp-pin-status');
+    if(!el) return;
+    el.textContent = PIN_HASH ? 'PIN ativo' : 'PIN não configurado';
+    el.style.color = PIN_HASH ? 'var(--pos)' : 'var(--text-dim)';
+  }
+
+  (async function init(){
+    await carregarPin();
+    atualizaIndicadorPin();
+    await carregarMinutosInatividade();
+    cpAbrirBloqueio(PIN_HASH ? 'entrar' : 'criar', {obrigatorio:true});
+
+    $('#cp-idle-min')?.addEventListener('change', async (e)=>{
+      const n = parseInt(e.target.value,10);
+      minutosInatividade = (!isNaN(n) && n>0) ? n : 10;
+      e.target.value = minutosInatividade;
+      try{ await storage.set('app-idle-minutes', String(minutosInatividade)); }catch(err){}
+    });
+
+    $('#cp-pin-config-btn')?.addEventListener('click', async ()=>{
+      await carregarPin();
+      atualizaIndicadorPin();
+      cpAbrirBloqueio(PIN_HASH ? 'gerenciar' : 'criar');
+    });
+
+    $('#cp-status').textContent = 'Verificando dados salvos...';
+    const restored = await tryLoadPersisted();
+    if(!restored){
+      $('#cp-status').textContent = 'Nenhum arquivo carregado';
+    }
+    renderTabs();
+    renderContent();
+  })();
+})();
+</script>
+</body>
+</html>
